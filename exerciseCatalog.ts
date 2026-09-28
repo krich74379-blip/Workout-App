@@ -1,0 +1,5728 @@
+/** Auto-generated from shared/exerciseCatalog.json — do not edit by hand. */
+export type ExerciseKind = 'machine' | 'freeweight' | 'bodyweight' | 'cardio'
+
+export type ExerciseCatalogEntry = {
+  name: string
+  kind: ExerciseKind | string
+  aliases?: string[]
+}
+
+export const EXERCISE_CATALOG: ExerciseCatalogEntry[] = [
+  {
+    "name": "45 Degree Leg Press",
+    "kind": "machine",
+    "aliases": [
+      "45 degree leg presses",
+      "45 degree press",
+      "45 leg press",
+      "45-degree-leg-press",
+      "angled leg press",
+      "forty five degree leg press"
+    ]
+  },
+  {
+    "name": "Ab Crunch Machine",
+    "kind": "machine",
+    "aliases": [
+      "ab crunch",
+      "ab crunch machines",
+      "ab crunchs",
+      "ab machine",
+      "ab-crunch-machine",
+      "abdominal crunch",
+      "abdominal machine",
+      "abs crunch",
+      "abs machine",
+      "crunch machine"
+    ]
+  },
+  {
+    "name": "Ab Wheel",
+    "kind": "bodyweight",
+    "aliases": [
+      "ab rollout",
+      "ab wheel roll out",
+      "ab wheel rollout",
+      "ab wheels",
+      "ab-wheel",
+      "abwheels",
+      "wheel rollout"
+    ]
+  },
+  {
+    "name": "Air Bike",
+    "kind": "cardio",
+    "aliases": [
+      "air bikes",
+      "air-bike",
+      "airbike",
+      "assault air bike",
+      "assault bike",
+      "echo bike",
+      "fan bike",
+      "fanbike"
+    ]
+  },
+  {
+    "name": "Air Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "air scott",
+      "air squad",
+      "air squats",
+      "air-squat",
+      "bodyweight squat",
+      "bodyweight squats",
+      "bw squat"
+    ]
+  },
+  {
+    "name": "Arc Trainer",
+    "kind": "cardio",
+    "aliases": [
+      "arc trainers",
+      "arc trainor",
+      "arc-trainer",
+      "arctainer"
+    ]
+  },
+  {
+    "name": "Arnold Press",
+    "kind": "freeweight",
+    "aliases": [
+      "arnold",
+      "arnold breast",
+      "arnold pressed",
+      "arnold presses",
+      "arnold prest",
+      "arnold-press",
+      "arnolds"
+    ]
+  },
+  {
+    "name": "Assault Runner",
+    "kind": "cardio",
+    "aliases": [
+      "assault run",
+      "assault runners",
+      "assault-runner",
+      "treadmill assault"
+    ]
+  },
+  {
+    "name": "Assisted Chin-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "assisted chin up",
+      "assisted chin-ups",
+      "assisted chins",
+      "assisted chinup",
+      "assisted chinups",
+      "assisted-chin-up"
+    ]
+  },
+  {
+    "name": "Assisted Dip",
+    "kind": "bodyweight",
+    "aliases": [
+      "assist dip",
+      "assisted dips",
+      "assisted-dip",
+      "machine dip"
+    ]
+  },
+  {
+    "name": "Assisted Pull-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "assist pull up",
+      "assisted paul up",
+      "assisted pole up",
+      "assisted pool up",
+      "assisted pull up",
+      "assisted pull ups",
+      "assisted pull-ups",
+      "assisted pullup",
+      "assisted pullups",
+      "assisted-pull-up",
+      "gravitron"
+    ]
+  },
+  {
+    "name": "Back Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "back extends",
+      "back extensions",
+      "back extention",
+      "back extentions",
+      "back raise",
+      "back-extension",
+      "hyperextension",
+      "hyperextensions"
+    ]
+  },
+  {
+    "name": "Back Extension Machine",
+    "kind": "machine",
+    "aliases": [
+      "back extends machine",
+      "back extension",
+      "back extension machines",
+      "back extention machine",
+      "back extentions machine",
+      "back raise machine",
+      "back-extension-machine",
+      "hyper machine",
+      "hyperextension machine"
+    ]
+  },
+  {
+    "name": "Ball Slams",
+    "kind": "freeweight",
+    "aliases": [
+      "ball slam",
+      "ball slamses",
+      "ball-slams",
+      "med ball slam",
+      "medicine ball slam",
+      "slam ball"
+    ]
+  },
+  {
+    "name": "Band External Shoulder Rotation",
+    "kind": "freeweight",
+    "aliases": [
+      "band er",
+      "band external rotation",
+      "band external shoulder rotations",
+      "band-external-shoulder-rotation",
+      "external band rotation"
+    ]
+  },
+  {
+    "name": "Band Internal Shoulder Rotation",
+    "kind": "freeweight",
+    "aliases": [
+      "band internal rotation",
+      "band internal shoulder rotations",
+      "band ir",
+      "band-internal-shoulder-rotation",
+      "internal band rotation"
+    ]
+  },
+  {
+    "name": "Band Pull-Apart",
+    "kind": "freeweight",
+    "aliases": [
+      "band paul apart",
+      "band pole apart",
+      "band pool apart",
+      "band pull apart",
+      "band pull-aparts",
+      "band pullapart",
+      "band pullaparts",
+      "band-pull-apart",
+      "face pull band",
+      "pull aparts"
+    ]
+  },
+  {
+    "name": "Band-Assisted Bench Press",
+    "kind": "freeweight",
+    "aliases": [
+      "band assisted ben press",
+      "band assisted ben's press",
+      "band assisted bench",
+      "band assisted bench breast",
+      "band assisted bench press",
+      "band assisted bench pressed",
+      "band assisted bench presses",
+      "band assisted bench prest",
+      "band assisted bens press",
+      "band assisted binge press",
+      "band bench",
+      "band-assisted bench presses",
+      "band-assisted-bench-press",
+      "bandassisted bench press",
+      "banded bench press"
+    ]
+  },
+  {
+    "name": "Banded Face Pull",
+    "kind": "freeweight",
+    "aliases": [
+      "band face pull",
+      "banded face paul",
+      "banded face pole",
+      "banded face pool",
+      "banded face pulls",
+      "banded facepulls",
+      "banded-face-pull"
+    ]
+  },
+  {
+    "name": "Banded Hip March",
+    "kind": "freeweight",
+    "aliases": [
+      "band hip march",
+      "banded hip marches",
+      "banded-hip-march",
+      "hip marches"
+    ]
+  },
+  {
+    "name": "Banded Muscle-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "band muscle up",
+      "banded muscle up",
+      "banded muscle-ups",
+      "banded muscleup",
+      "banded-muscle-up"
+    ]
+  },
+  {
+    "name": "Banded Side Kicks",
+    "kind": "freeweight",
+    "aliases": [
+      "band side kick",
+      "banded side kick",
+      "banded side kickses",
+      "banded-side-kicks"
+    ]
+  },
+  {
+    "name": "Bar Dip",
+    "kind": "bodyweight",
+    "aliases": [
+      "bar dips",
+      "bar-dip",
+      "parallel bar dip",
+      "straight bar dip"
+    ]
+  },
+  {
+    "name": "Bar Hang",
+    "kind": "freeweight",
+    "aliases": [
+      "bar hangs",
+      "bar-hang",
+      "dead hang",
+      "dead hangs",
+      "hang from bar"
+    ]
+  },
+  {
+    "name": "Barbell Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell carl",
+      "barbell cull",
+      "barbell curls",
+      "barbell girl",
+      "barbell pearl",
+      "barbell-curl",
+      "bb curl",
+      "bb curls",
+      "ez free curl",
+      "straight bar curl"
+    ]
+  },
+  {
+    "name": "Barbell Front Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell front race",
+      "barbell front raises",
+      "barbell front rays",
+      "barbell front raze",
+      "barbell-front-raise",
+      "bb front raise",
+      "front raise"
+    ]
+  },
+  {
+    "name": "Barbell Hack Squat",
+    "kind": "machine",
+    "aliases": [
+      "barbell hack",
+      "barbell hack scott",
+      "barbell hack squad",
+      "barbell hack squats",
+      "barbell-hack-squat",
+      "bb hack squat",
+      "hack squat"
+    ]
+  },
+  {
+    "name": "Barbell Incline Triceps Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell incline triceps extensions",
+      "barbell-incline-triceps-extension",
+      "bb incline tricep extension",
+      "bb incline triceps extension",
+      "incline bb skull crusher",
+      "incline triceps extension"
+    ]
+  },
+  {
+    "name": "Barbell Lunge",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell lunges",
+      "barbell-lunge",
+      "bb lunge",
+      "walking barbell lunge"
+    ]
+  },
+  {
+    "name": "Barbell Lying Triceps Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell lying triceps extensions",
+      "barbell skull crusher",
+      "barbell-lying-triceps-extension",
+      "bb lying triceps extension",
+      "bb skull crusher",
+      "lying bb tricep extension",
+      "lying triceps extension"
+    ]
+  },
+  {
+    "name": "Barbell Preacher Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell preacher carl",
+      "barbell preacher cull",
+      "barbell preacher curls",
+      "barbell preacher girl",
+      "barbell preacher pearl",
+      "barbell-preacher-curl",
+      "bb preacher curl",
+      "preacher curl"
+    ]
+  },
+  {
+    "name": "Barbell Rear Delt Row",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell rear delt rows",
+      "barbell-rear-delt-row",
+      "bb rear delt row",
+      "rear delt row"
+    ]
+  },
+  {
+    "name": "Barbell Row",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell rho",
+      "barbell roe",
+      "barbell rows",
+      "barbell-row",
+      "bb row",
+      "bb rows",
+      "bent over barbell row",
+      "pendlay"
+    ]
+  },
+  {
+    "name": "Barbell Seated Calf Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell seated calf raises",
+      "barbell-seated-calf-raise",
+      "bb seated calf raise",
+      "seated calf raise"
+    ]
+  },
+  {
+    "name": "Barbell Shrug",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell shrugs",
+      "barbell-shrug",
+      "bb shrug"
+    ]
+  },
+  {
+    "name": "Barbell Standing Calf Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell standing calf raises",
+      "barbell-standing-calf-raise",
+      "bb standing calf raise",
+      "standing calf raise"
+    ]
+  },
+  {
+    "name": "Barbell Standing Triceps Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell standing triceps extensions",
+      "barbell-standing-triceps-extension",
+      "bb standing triceps extension",
+      "standing triceps extension"
+    ]
+  },
+  {
+    "name": "Barbell Upright Row",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell upright rho",
+      "barbell upright roe",
+      "barbell upright rows",
+      "barbell-upright-row",
+      "bb upright row",
+      "upright row"
+    ]
+  },
+  {
+    "name": "Barbell Walking Lunge",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell walking lunges",
+      "barbell-walking-lunge",
+      "bb walking lunge",
+      "walking lunge"
+    ]
+  },
+  {
+    "name": "Barbell Wrist Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell wrist carl",
+      "barbell wrist cull",
+      "barbell wrist curls",
+      "barbell wrist girl",
+      "barbell wrist pearl",
+      "barbell-wrist-curl",
+      "bb wrist curl",
+      "wrist curl"
+    ]
+  },
+  {
+    "name": "Barbell Wrist Curl Behind the Back",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell wrist curl behind the backs",
+      "barbell-wrist-curl-behind-the-back",
+      "bb wrist curl behind the back",
+      "wrist curl behind the back"
+    ]
+  },
+  {
+    "name": "Barbell Wrist Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell wrist extends",
+      "barbell wrist extensions",
+      "barbell wrist extention",
+      "barbell wrist extentions",
+      "barbell-wrist-extension",
+      "bb wrist extension",
+      "wrist extension"
+    ]
+  },
+  {
+    "name": "Battle Ropes",
+    "kind": "freeweight",
+    "aliases": [
+      "battle rope",
+      "battle ropeses",
+      "battle-ropes",
+      "battling ropes"
+    ]
+  },
+  {
+    "name": "Bayesian Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "bayesian carl",
+      "bayesian cull",
+      "bayesian curls",
+      "bayesian girl",
+      "bayesian pearl",
+      "bayesian-curl"
+    ]
+  },
+  {
+    "name": "Behind the Neck Press",
+    "kind": "freeweight",
+    "aliases": [
+      "behind the neck presses",
+      "behind-the-neck-press"
+    ]
+  },
+  {
+    "name": "Belt Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "belt scott",
+      "belt squad",
+      "belt squats",
+      "belt-squat"
+    ]
+  },
+  {
+    "name": "Belt Squat March",
+    "kind": "machine",
+    "aliases": [
+      "belt scott march",
+      "belt squad march",
+      "belt squat marches",
+      "belt squats march",
+      "belt-squat-march"
+    ]
+  },
+  {
+    "name": "Bench Dip",
+    "kind": "bodyweight",
+    "aliases": [
+      "ben dip",
+      "ben's dip",
+      "bench dips",
+      "bench-dip",
+      "bens dip",
+      "binge dip"
+    ]
+  },
+  {
+    "name": "Bench Press",
+    "kind": "freeweight",
+    "aliases": [
+      "beach press",
+      "ben press",
+      "ben's press",
+      "bench breast",
+      "bench pressed",
+      "bench presses",
+      "bench prest",
+      "bench-press",
+      "benchpress",
+      "bens press",
+      "binge press",
+      "binged press",
+      "bp",
+      "flat bench",
+      "flat bench press",
+      "pin interest",
+      "pin terest",
+      "pin trest",
+      "pin-terest",
+      "pinter est",
+      "pinteres",
+      "pinterest",
+      "pintrest"
+    ]
+  },
+  {
+    "name": "Bench Press Against Band",
+    "kind": "freeweight",
+    "aliases": [
+      "bench press against bands",
+      "bench-press-against-band"
+    ]
+  },
+  {
+    "name": "Bent-Over Row",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell row",
+      "bent over rho",
+      "bent over roe",
+      "bent over row",
+      "bent over rows",
+      "bent-over rows",
+      "bent-over-row",
+      "bentover row"
+    ]
+  },
+  {
+    "name": "Bicep Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "aye said curl",
+      "aye said curls",
+      "bc",
+      "bi curl",
+      "bi curls",
+      "bicep carl",
+      "bicep cull",
+      "bicep curls",
+      "bicep girl",
+      "bicep pearl",
+      "bicep-curl",
+      "biceps",
+      "biceps curl",
+      "biceps curls",
+      "bus lip curl",
+      "bus lip curls",
+      "buy curl",
+      "buy curls",
+      "buz lip curl",
+      "buz lip curls",
+      "buzz lip curl",
+      "buzz lip curls",
+      "by curl",
+      "by curls",
+      "bycep curl",
+      "bycep curls",
+      "bye curl",
+      "bye curls",
+      "eye said curl",
+      "eye said curls",
+      "eye say curl",
+      "eye say curls",
+      "eyes curl",
+      "eyes curls",
+      "i said curl",
+      "i said curls",
+      "i say curl",
+      "i say curls",
+      "i sed curl",
+      "i sed curls",
+      "i've said curl",
+      "i've said curls",
+      "ice curl",
+      "ice curls",
+      "isa curl",
+      "isa curls",
+      "isacurl",
+      "isacurls",
+      "issa curl",
+      "issa curls",
+      "ive said curl",
+      "ive said curls",
+      "iza curl",
+      "iza curls",
+      "izacurl",
+      "izacurls",
+      "lip curl",
+      "lip curls",
+      "vib curl",
+      "vice curl",
+      "i said leg curl",
+      "i said leg curls",
+      "i said lag curl",
+      "i said lag curls",
+      "i say leg curl",
+      "i say leg curls",
+      "i say lag curl",
+      "i say lag curls",
+      "eye said leg curl",
+      "eye said leg curls",
+      "aye said leg curl",
+      "aye said leg curls",
+      "i've said leg curl",
+      "i've said leg curls",
+      "ive said leg curl",
+      "ive said leg curls",
+      "i sed leg curl",
+      "i sed leg curls"
+    ]
+  },
+  {
+    "name": "Bicep Curl Machine",
+    "kind": "machine",
+    "aliases": [
+      "bicep carl machine",
+      "bicep cull machine",
+      "bicep curl machines",
+      "bicep girl machine",
+      "bicep pearl machine",
+      "bicep-curl-machine",
+      "biceps curl machine",
+      "bycep curl machine",
+      "machine bicep curl",
+      "machine biceps curl",
+      "machine curl",
+      "preacher machine"
+    ]
+  },
+  {
+    "name": "Bicycle Crunch",
+    "kind": "bodyweight",
+    "aliases": [
+      "bicycle crunches",
+      "bicycle-crunch"
+    ]
+  },
+  {
+    "name": "Bird Dog",
+    "kind": "bodyweight",
+    "aliases": [
+      "bird dogs",
+      "bird-dog"
+    ]
+  },
+  {
+    "name": "Block Clean",
+    "kind": "freeweight",
+    "aliases": [
+      "block cleans",
+      "block-clean"
+    ]
+  },
+  {
+    "name": "Block Snatch",
+    "kind": "freeweight",
+    "aliases": [
+      "block snatches",
+      "block-snatch"
+    ]
+  },
+  {
+    "name": "Board Press",
+    "kind": "freeweight",
+    "aliases": [
+      "board breast",
+      "board pressed",
+      "board presses",
+      "board prest",
+      "board-press"
+    ]
+  },
+  {
+    "name": "Body Weight Lunge",
+    "kind": "freeweight",
+    "aliases": [
+      "body weight lunges",
+      "body-weight-lunge"
+    ]
+  },
+  {
+    "name": "Bodyweight Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "bodyweight carl",
+      "bodyweight cull",
+      "bodyweight curls",
+      "bodyweight girl",
+      "bodyweight pearl",
+      "bodyweight-curl"
+    ]
+  },
+  {
+    "name": "Bodyweight Leg Curl",
+    "kind": "machine",
+    "aliases": [
+      "bodyweight lag curl",
+      "bodyweight lead curl",
+      "bodyweight led curl",
+      "bodyweight leg carl",
+      "bodyweight leg cull",
+      "bodyweight leg curls",
+      "bodyweight leg girl",
+      "bodyweight leg pearl",
+      "bodyweight like curl",
+      "bodyweight-leg-curl"
+    ]
+  },
+  {
+    "name": "Box Jump",
+    "kind": "freeweight",
+    "aliases": [
+      "box jumps",
+      "box-jump"
+    ]
+  },
+  {
+    "name": "Box Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "box scott",
+      "box squad",
+      "box squats",
+      "box-squat"
+    ]
+  },
+  {
+    "name": "Bulgarian Split Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "bss",
+      "bulgarian split",
+      "bulgarian split scott",
+      "bulgarian split squad",
+      "bulgarian split squats",
+      "bulgarian squat",
+      "bulgarian squats",
+      "bulgarian-split-squat",
+      "rear foot elevated squat",
+      "split squat bulgarian"
+    ]
+  },
+  {
+    "name": "Burpee",
+    "kind": "bodyweight",
+    "aliases": [
+      "burpees"
+    ]
+  },
+  {
+    "name": "Butterfly Machine",
+    "kind": "machine",
+    "aliases": [
+      "butterfly machines",
+      "butterfly-machine",
+      "butter fly machine"
+    ]
+  },
+  {
+    "name": "Cable Chest Press",
+    "kind": "freeweight",
+    "aliases": [
+      "cable chast press",
+      "cable chess press",
+      "cable chest breast",
+      "cable chest pressed",
+      "cable chest presses",
+      "cable chest prest",
+      "cable-chest-press",
+      "chest press"
+    ]
+  },
+  {
+    "name": "Cable Close Grip Seated Row",
+    "kind": "machine",
+    "aliases": [
+      "cable close grip seated rows",
+      "cable-close-grip-seated-row",
+      "close grip seated row"
+    ]
+  },
+  {
+    "name": "Cable Crossover",
+    "kind": "machine",
+    "aliases": [
+      "cable cross",
+      "cable cross over",
+      "cable crossovers",
+      "cable-crossover",
+      "crossover",
+      "crossovers"
+    ]
+  },
+  {
+    "name": "Cable Crossover Bicep Curl",
+    "kind": "machine",
+    "aliases": [
+      "cable crossover bicep curls",
+      "cable-crossover-bicep-curl",
+      "crossover bicep curl"
+    ]
+  },
+  {
+    "name": "Cable Crunch",
+    "kind": "freeweight",
+    "aliases": [
+      "cable crunches",
+      "cable-crunch",
+      "kneeling cable crunch"
+    ]
+  },
+  {
+    "name": "Cable Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "cable bi curl",
+      "cable bicep curl",
+      "cable carl",
+      "cable cull",
+      "cable curls",
+      "cable girl",
+      "cable pearl",
+      "cable-curl"
+    ]
+  },
+  {
+    "name": "Cable Curl With Bar",
+    "kind": "freeweight",
+    "aliases": [
+      "cable curl with bars",
+      "cable-curl-with-bar",
+      "curl with bar"
+    ]
+  },
+  {
+    "name": "Cable Curl With Rope",
+    "kind": "freeweight",
+    "aliases": [
+      "cable curl with ropes",
+      "cable-curl-with-rope",
+      "curl with rope"
+    ]
+  },
+  {
+    "name": "Cable External Shoulder Rotation",
+    "kind": "freeweight",
+    "aliases": [
+      "cable external shoulder rotations",
+      "cable-external-shoulder-rotation",
+      "external shoulder rotation"
+    ]
+  },
+  {
+    "name": "Cable Face Pull",
+    "kind": "machine",
+    "aliases": [
+      "cable face paul",
+      "cable face pole",
+      "cable face pool",
+      "cable face pulls",
+      "cable-face-pull",
+      "face pull"
+    ]
+  },
+  {
+    "name": "Cable Fly",
+    "kind": "freeweight",
+    "aliases": [
+      "cable flies",
+      "cable flye",
+      "cable flyes",
+      "cable-fly"
+    ]
+  },
+  {
+    "name": "Cable Front Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "cable front race",
+      "cable front raises",
+      "cable front rays",
+      "cable front raze",
+      "cable-front-raise",
+      "front raise"
+    ]
+  },
+  {
+    "name": "Cable Glute Kickback",
+    "kind": "machine",
+    "aliases": [
+      "cable flute kickback",
+      "cable gloot kickback",
+      "cable glue kickback",
+      "cable glut kickback",
+      "cable glute kickbacks",
+      "cable-glute-kickback",
+      "glute kickback"
+    ]
+  },
+  {
+    "name": "Cable Internal Shoulder Rotation",
+    "kind": "freeweight",
+    "aliases": [
+      "cable internal shoulder rotations",
+      "cable-internal-shoulder-rotation",
+      "internal shoulder rotation"
+    ]
+  },
+  {
+    "name": "Cable Lateral Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "cable lateral race",
+      "cable lateral raises",
+      "cable lateral rays",
+      "cable lateral raze",
+      "cable side raise",
+      "cable-lateral-raise",
+      "lateral raise"
+    ]
+  },
+  {
+    "name": "Cable Machine",
+    "kind": "machine",
+    "aliases": [
+      "cable machines",
+      "cable station",
+      "cable stations",
+      "cable-machine"
+    ]
+  },
+  {
+    "name": "Cable Machine Hip Abduction",
+    "kind": "machine",
+    "aliases": [
+      "cable machine hip abductions",
+      "cable-machine-hip-abduction",
+      "machine hip abduction"
+    ]
+  },
+  {
+    "name": "Cable Machine Hip Adduction",
+    "kind": "machine",
+    "aliases": [
+      "cable machine hip adductions",
+      "cable-machine-hip-adduction",
+      "machine hip adduction"
+    ]
+  },
+  {
+    "name": "Cable Pull Through",
+    "kind": "freeweight",
+    "aliases": [
+      "cable paul through",
+      "cable pole through",
+      "cable pool through",
+      "cable pull throughs",
+      "cable-pull-through",
+      "pull through"
+    ]
+  },
+  {
+    "name": "Cable Rear Delt Row",
+    "kind": "freeweight",
+    "aliases": [
+      "cable rear delt rows",
+      "cable-rear-delt-row",
+      "rear delt row"
+    ]
+  },
+  {
+    "name": "Cable Row",
+    "kind": "freeweight",
+    "aliases": [
+      "cable rho",
+      "cable roe",
+      "cable rows",
+      "cable-row",
+      "seated cable row",
+      "sitting cable row"
+    ]
+  },
+  {
+    "name": "Cable Wide Grip Seated Row",
+    "kind": "machine",
+    "aliases": [
+      "cable wide grip seated rows",
+      "cable-wide-grip-seated-row",
+      "wide grip seated row"
+    ]
+  },
+  {
+    "name": "Calf Extension",
+    "kind": "machine",
+    "aliases": [
+      "cal extension",
+      "calf extends",
+      "calf extensions",
+      "calf extention",
+      "calf extentions",
+      "calf-extension",
+      "cap extension",
+      "cast extension",
+      "cat extension",
+      "life fitness calf extension"
+    ]
+  },
+  {
+    "name": "Calf Press",
+    "kind": "machine",
+    "aliases": [
+      "brussel",
+      "brussels",
+      "caf",
+      "cal press",
+      "calf breast",
+      "calf extension",
+      "calf extensions",
+      "calf lift",
+      "calf lifts",
+      "calf pressed",
+      "calf presses",
+      "calf prest",
+      "calf-press",
+      "calves press",
+      "cap press",
+      "cast press",
+      "cat press",
+      "half past",
+      "half press",
+      "have that"
+    ]
+  },
+  {
+    "name": "Calf Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "cal raise",
+      "calf race",
+      "calf raises",
+      "calf rays",
+      "calf raze",
+      "calf-raise",
+      "calve raise",
+      "calves raise",
+      "calves raises",
+      "cap raise",
+      "cast raise",
+      "cat raise"
+    ]
+  },
+  {
+    "name": "Calf Raise in Leg Press",
+    "kind": "machine",
+    "aliases": [
+      "calf raise in leg presses",
+      "calf-raise-in-leg-press"
+    ]
+  },
+  {
+    "name": "Calf Raise Machine",
+    "kind": "machine",
+    "aliases": [
+      "cal raise machine",
+      "calf machine",
+      "calf race machine",
+      "calf raise",
+      "calf raise machines",
+      "calf rays machine",
+      "calf raze machine",
+      "calf-raise-machine",
+      "cap raise machine",
+      "cast raise machine",
+      "cat raise machine"
+    ]
+  },
+  {
+    "name": "Captain's Chair",
+    "kind": "machine",
+    "aliases": [
+      "captain's chairs",
+      "captain's-chair",
+      "captains chair",
+      "hanging knee raise",
+      "roman chair",
+      "vertical knee raise",
+      "vkr"
+    ]
+  },
+  {
+    "name": "Captain's Chair Knee Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "captain's chair knee raises",
+      "captain's-chair-knee-raise",
+      "captains chair knee raise"
+    ]
+  },
+  {
+    "name": "Captain's Chair Leg Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "captain's chair leg raises",
+      "captain's-chair-leg-raise",
+      "captains chair leg raise"
+    ]
+  },
+  {
+    "name": "Chair Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "chair scott",
+      "chair squad",
+      "chair squats",
+      "chair-squat"
+    ]
+  },
+  {
+    "name": "Chest Fly",
+    "kind": "freeweight",
+    "aliases": [
+      "chast fly",
+      "chess fly",
+      "chest flies",
+      "chest flye",
+      "chest flyes",
+      "chest-fly"
+    ]
+  },
+  {
+    "name": "Chest Fly Machine",
+    "kind": "machine",
+    "aliases": [
+      "chast fly machine",
+      "chess fly machine",
+      "chest flies machine",
+      "chest fly",
+      "chest fly machines",
+      "chest flye machine",
+      "chest flyes machine",
+      "chest-fly-machine"
+    ]
+  },
+  {
+    "name": "Chest Press",
+    "kind": "freeweight",
+    "aliases": [
+      "chast press",
+      "chess press",
+      "chest breast",
+      "chest pressed",
+      "chest presses",
+      "chest prest",
+      "chest-press",
+      "chestpress",
+      "machine chest press"
+    ]
+  },
+  {
+    "name": "Chest to Bar",
+    "kind": "freeweight",
+    "aliases": [
+      "chast to bar",
+      "chess to bar",
+      "chest to bars",
+      "chest-to-bar"
+    ]
+  },
+  {
+    "name": "Chest-Supported Dumbbell Row",
+    "kind": "freeweight",
+    "aliases": [
+      "chast supported dumbbell row",
+      "chess supported dumbbell row",
+      "chest supported dumbbell rho",
+      "chest supported dumbbell roe",
+      "chest supported dumbbell row",
+      "chest-supported dumbbell rows",
+      "chest-supported-dumbbell-row",
+      "chestsupported dumbbell row"
+    ]
+  },
+  {
+    "name": "Chest-Supported Row",
+    "kind": "machine",
+    "aliases": [
+      "chast supported row",
+      "chess supported row",
+      "chest supported rho",
+      "chest supported roe",
+      "chest supported row",
+      "chest supported rows",
+      "chest-supported rows",
+      "chest-supported-row",
+      "chestsupported row",
+      "incline bench row"
+    ]
+  },
+  {
+    "name": "Chin-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "chin up",
+      "chin ups",
+      "chin-ups",
+      "chins",
+      "chinup",
+      "chinups"
+    ]
+  },
+  {
+    "name": "Clamshells",
+    "kind": "freeweight",
+    "aliases": [
+      "clamshell",
+      "clamshellses"
+    ]
+  },
+  {
+    "name": "Clap Push-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "clap push up",
+      "clap push-ups",
+      "clap pushup",
+      "clap-push-up"
+    ]
+  },
+  {
+    "name": "Clean",
+    "kind": "freeweight",
+    "aliases": [
+      "cleans"
+    ]
+  },
+  {
+    "name": "Clean and Jerk",
+    "kind": "freeweight",
+    "aliases": [
+      "clean and jerks",
+      "clean-and-jerk"
+    ]
+  },
+  {
+    "name": "Close-Grip Bench Press",
+    "kind": "freeweight",
+    "aliases": [
+      "cgbp",
+      "close grip ben press",
+      "close grip ben's press",
+      "close grip bench",
+      "close grip bench breast",
+      "close grip bench press",
+      "close grip bench pressed",
+      "close grip bench presses",
+      "close grip bench prest",
+      "close grip bens press",
+      "close grip binge press",
+      "close-grip bench",
+      "close-grip bench presses",
+      "close-grip-bench-press",
+      "closegrip bench press",
+      "narrow grip bench"
+    ]
+  },
+  {
+    "name": "Close-Grip Chin-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "close grip chin up",
+      "close-grip chin-ups",
+      "close-grip-chin-up",
+      "closegrip chinup"
+    ]
+  },
+  {
+    "name": "Close-Grip Feet-Up Bench Press",
+    "kind": "freeweight",
+    "aliases": [
+      "close grip feet up bench press",
+      "close-grip feet-up bench presses",
+      "close-grip-feet-up-bench-press",
+      "closegrip feetup bench press"
+    ]
+  },
+  {
+    "name": "Close-Grip Lat Pulldown",
+    "kind": "machine",
+    "aliases": [
+      "close grip lack pulldown",
+      "close grip lat pull-down",
+      "close grip lat pulldown",
+      "close grip lat pulldowns",
+      "close grip lats pulldown",
+      "close-grip lat pulldowns",
+      "close-grip-lat-pulldown",
+      "closegrip lat pulldown"
+    ]
+  },
+  {
+    "name": "Close-Grip Pulldown",
+    "kind": "machine",
+    "aliases": [
+      "close grip pull-down",
+      "close grip pulldown",
+      "close grip pulldowns",
+      "close pulldown",
+      "close-grip pulldowns",
+      "close-grip-pulldown",
+      "closegrip pulldown",
+      "v bar pulldown",
+      "v-bar pulldown"
+    ]
+  },
+  {
+    "name": "Close-Grip Push-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "close grip push up",
+      "close-grip push-ups",
+      "close-grip-push-up",
+      "closegrip pushup"
+    ]
+  },
+  {
+    "name": "Cobra Push-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "cobra push up",
+      "cobra push-ups",
+      "cobra pushup",
+      "cobra-push-up"
+    ]
+  },
+  {
+    "name": "Concentration Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "conc curl",
+      "concentration carl",
+      "concentration cull",
+      "concentration curls",
+      "concentration girl",
+      "concentration pearl",
+      "concentration-curl"
+    ]
+  },
+  {
+    "name": "Copenhagen Plank",
+    "kind": "bodyweight",
+    "aliases": [
+      "copenhagen planks",
+      "copenhagen-plank"
+    ]
+  },
+  {
+    "name": "Core Twist",
+    "kind": "freeweight",
+    "aliases": [
+      "core twists",
+      "core-twist"
+    ]
+  },
+  {
+    "name": "Cossack Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "cossack scott",
+      "cossack squad",
+      "cossack squats",
+      "cossack-squat"
+    ]
+  },
+  {
+    "name": "Crossbody Cable Triceps Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "crossbody cable triceps extensions",
+      "crossbody-cable-triceps-extension"
+    ]
+  },
+  {
+    "name": "Crunch",
+    "kind": "bodyweight",
+    "aliases": [
+      "crunches"
+    ]
+  },
+  {
+    "name": "Cuban Press",
+    "kind": "freeweight",
+    "aliases": [
+      "cuban breast",
+      "cuban pressed",
+      "cuban presses",
+      "cuban prest",
+      "cuban-press"
+    ]
+  },
+  {
+    "name": "Curtsy Lunge",
+    "kind": "freeweight",
+    "aliases": [
+      "curtsy lunges",
+      "curtsy-lunge"
+    ]
+  },
+  {
+    "name": "Indoor Cycle",
+    "kind": "cardio",
+    "aliases": [
+      "cycle",
+      "cycles",
+      "cycling",
+      "exercise bike",
+      "exercise bikes",
+      "indoor bike",
+      "indoor bikes",
+      "indoor cycle",
+      "indoor cycles",
+      "indoor cycling",
+      "spin cycle",
+      "studio bike",
+      "studio cycle"
+    ]
+  },
+  {
+    "name": "Dead Bug",
+    "kind": "freeweight",
+    "aliases": [
+      "dead bugs",
+      "dead-bug"
+    ]
+  },
+  {
+    "name": "Dead Bug With Dumbbells",
+    "kind": "freeweight",
+    "aliases": [
+      "dead bug with dumbbell",
+      "dead bug with dumbbellses",
+      "dead-bug-with-dumbbells"
+    ]
+  },
+  {
+    "name": "Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "conventional deadlift",
+      "dead lift",
+      "deadlifts",
+      "dl"
+    ]
+  },
+  {
+    "name": "Death March with Dumbbells",
+    "kind": "freeweight",
+    "aliases": [
+      "death march with dumbbell",
+      "death march with dumbbellses",
+      "death-march-with-dumbbells"
+    ]
+  },
+  {
+    "name": "Decline Bench Press",
+    "kind": "freeweight",
+    "aliases": [
+      "decline ben press",
+      "decline ben's press",
+      "decline bench",
+      "decline bench breast",
+      "decline bench pressed",
+      "decline bench presses",
+      "decline bench prest",
+      "decline bens press",
+      "decline binge press",
+      "decline bp",
+      "decline press",
+      "decline-bench-press"
+    ]
+  },
+  {
+    "name": "Decline Chest Press",
+    "kind": "freeweight",
+    "aliases": [
+      "decline chast press",
+      "decline chess press",
+      "decline chest breast",
+      "decline chest pressed",
+      "decline chest presses",
+      "decline chest prest",
+      "decline-chest-press"
+    ]
+  },
+  {
+    "name": "Decline Push-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "decline push up",
+      "decline push-ups",
+      "decline pushup",
+      "decline-push-up"
+    ]
+  },
+  {
+    "name": "Deficit Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "deficit deadlifts",
+      "deficit-deadlift"
+    ]
+  },
+  {
+    "name": "Depth Jump",
+    "kind": "freeweight",
+    "aliases": [
+      "depth jumps",
+      "depth-jump"
+    ]
+  },
+  {
+    "name": "Devils Press",
+    "kind": "freeweight",
+    "aliases": [
+      "devils breast",
+      "devils pressed",
+      "devils presses",
+      "devils prest",
+      "devils-press"
+    ]
+  },
+  {
+    "name": "Dip",
+    "kind": "bodyweight",
+    "aliases": [
+      "bench dip",
+      "parallel bar dip"
+    ]
+  },
+  {
+    "name": "Donkey Calf Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "donkey cal raise",
+      "donkey calf race",
+      "donkey calf raises",
+      "donkey calf rays",
+      "donkey calf raze",
+      "donkey cap raise",
+      "donkey cast raise",
+      "donkey cat raise",
+      "donkey-calf-raise"
+    ]
+  },
+  {
+    "name": "Donkey Kicks",
+    "kind": "freeweight",
+    "aliases": [
+      "donkey kick",
+      "donkey kickses",
+      "donkey-kicks"
+    ]
+  },
+  {
+    "name": "Drag Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "drag carl",
+      "drag cull",
+      "drag curls",
+      "drag girl",
+      "drag pearl",
+      "drag-curl"
+    ]
+  },
+  {
+    "name": "Dragon Flag",
+    "kind": "freeweight",
+    "aliases": [
+      "dragon flags",
+      "dragon-flag"
+    ]
+  },
+  {
+    "name": "Dumbbell Chest Fly",
+    "kind": "freeweight",
+    "aliases": [
+      "chest fly",
+      "db chest fly",
+      "dumbbell chast fly",
+      "dumbbell chess fly",
+      "dumbbell chest flies",
+      "dumbbell chest flye",
+      "dumbbell chest flyes",
+      "dumbbell-chest-fly"
+    ]
+  },
+  {
+    "name": "Dumbbell Chest Press",
+    "kind": "freeweight",
+    "aliases": [
+      "chest press",
+      "db chest press",
+      "dumbbell chast press",
+      "dumbbell chess press",
+      "dumbbell chest breast",
+      "dumbbell chest pressed",
+      "dumbbell chest presses",
+      "dumbbell chest prest",
+      "dumbbell-chest-press"
+    ]
+  },
+  {
+    "name": "Dumbbell Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "db curl",
+      "db curls",
+      "dumb bell curl",
+      "dumbbell carl",
+      "dumbbell cull",
+      "dumbbell curls",
+      "dumbbell girl",
+      "dumbbell pearl",
+      "dumbbell-curl"
+    ]
+  },
+  {
+    "name": "Dumbbell Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "db deadlift",
+      "deadlift",
+      "dumbbell deadlifts",
+      "dumbbell-deadlift"
+    ]
+  },
+  {
+    "name": "Dumbbell Decline Chest Press",
+    "kind": "freeweight",
+    "aliases": [
+      "db decline chest press",
+      "decline chest press",
+      "dumbbell decline chest presses",
+      "dumbbell-decline-chest-press"
+    ]
+  },
+  {
+    "name": "Dumbbell Floor Press",
+    "kind": "freeweight",
+    "aliases": [
+      "db floor press",
+      "dumbbell floor breast",
+      "dumbbell floor pressed",
+      "dumbbell floor presses",
+      "dumbbell floor prest",
+      "dumbbell-floor-press",
+      "floor press"
+    ]
+  },
+  {
+    "name": "Dumbbell Fly",
+    "kind": "freeweight",
+    "aliases": [
+      "db fly",
+      "db flye",
+      "dumbbell flies",
+      "dumbbell flye",
+      "dumbbell flyes",
+      "dumbbell-fly"
+    ]
+  },
+  {
+    "name": "Dumbbell Frog Pumps",
+    "kind": "freeweight",
+    "aliases": [
+      "db frog pumps",
+      "dumbbell frog pump",
+      "dumbbell frog pumpses",
+      "dumbbell-frog-pumps",
+      "frog pumps"
+    ]
+  },
+  {
+    "name": "Dumbbell Front Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "db front raise",
+      "dumbbell front race",
+      "dumbbell front raises",
+      "dumbbell front rays",
+      "dumbbell front raze",
+      "dumbbell-front-raise",
+      "front raise"
+    ]
+  },
+  {
+    "name": "Dumbbell Horizontal External Shoulder Rotation",
+    "kind": "freeweight",
+    "aliases": [
+      "db horizontal external shoulder rotation",
+      "dumbbell horizontal external shoulder rotations",
+      "dumbbell-horizontal-external-shoulder-rotation",
+      "horizontal external shoulder rotation"
+    ]
+  },
+  {
+    "name": "Dumbbell Horizontal Internal Shoulder Rotation",
+    "kind": "freeweight",
+    "aliases": [
+      "db horizontal internal shoulder rotation",
+      "dumbbell horizontal internal shoulder rotations",
+      "dumbbell-horizontal-internal-shoulder-rotation",
+      "horizontal internal shoulder rotation"
+    ]
+  },
+  {
+    "name": "Dumbbell Lateral Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "db lateral raise",
+      "dumbbell lateral race",
+      "dumbbell lateral raises",
+      "dumbbell lateral rays",
+      "dumbbell lateral raze",
+      "dumbbell-lateral-raise",
+      "lateral raise"
+    ]
+  },
+  {
+    "name": "Dumbbell Lunge",
+    "kind": "freeweight",
+    "aliases": [
+      "db lunge",
+      "dumbbell lunges",
+      "dumbbell-lunge"
+    ]
+  },
+  {
+    "name": "Dumbbell Lying Triceps Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "db lying triceps extension",
+      "dumbbell lying triceps extensions",
+      "dumbbell-lying-triceps-extension",
+      "lying triceps extension"
+    ]
+  },
+  {
+    "name": "Dumbbell Preacher Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "db preacher curl",
+      "dumbbell preacher carl",
+      "dumbbell preacher cull",
+      "dumbbell preacher curls",
+      "dumbbell preacher girl",
+      "dumbbell preacher pearl",
+      "dumbbell-preacher-curl",
+      "preacher curl"
+    ]
+  },
+  {
+    "name": "Dumbbell Pullover",
+    "kind": "freeweight",
+    "aliases": [
+      "db pullover",
+      "dumbbell pullovers",
+      "dumbbell-pullover"
+    ]
+  },
+  {
+    "name": "Dumbbell Rear Delt Row",
+    "kind": "freeweight",
+    "aliases": [
+      "db rear delt row",
+      "dumbbell rear delt rows",
+      "dumbbell-rear-delt-row",
+      "rear delt row"
+    ]
+  },
+  {
+    "name": "Dumbbell Romanian Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "db romanian deadlift",
+      "dumbbell romania deadlift",
+      "dumbbell romanian deadlifts",
+      "dumbbell rumanian deadlift",
+      "dumbbell-romanian-deadlift",
+      "romanian deadlift"
+    ]
+  },
+  {
+    "name": "Dumbbell Row",
+    "kind": "freeweight",
+    "aliases": [
+      "db row",
+      "db rows",
+      "dumbbell rho",
+      "dumbbell roe",
+      "dumbbell rows",
+      "dumbbell-row",
+      "one arm row",
+      "single arm row"
+    ]
+  },
+  {
+    "name": "Dumbbell Shoulder Press",
+    "kind": "freeweight",
+    "aliases": [
+      "db ohp",
+      "db shoulder press",
+      "dumbbell boulder press",
+      "dumbbell ohp",
+      "dumbbell shoulder breast",
+      "dumbbell shoulder pressed",
+      "dumbbell shoulder presses",
+      "dumbbell shoulder prest",
+      "dumbbell shoulders press",
+      "dumbbell-shoulder-press",
+      "shoulder press"
+    ]
+  },
+  {
+    "name": "Dumbbell Shrug",
+    "kind": "freeweight",
+    "aliases": [
+      "db shrug",
+      "dumbbell shrugs",
+      "dumbbell-shrug"
+    ]
+  },
+  {
+    "name": "Dumbbell Side Bend",
+    "kind": "freeweight",
+    "aliases": [
+      "db side bend",
+      "dumbbell side bends",
+      "dumbbell-side-bend",
+      "side bend"
+    ]
+  },
+  {
+    "name": "Dumbbell Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "db squat",
+      "dumbbell scott",
+      "dumbbell squad",
+      "dumbbell squats",
+      "dumbbell-squat"
+    ]
+  },
+  {
+    "name": "Dumbbell Standing Triceps Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "db standing triceps extension",
+      "dumbbell standing triceps extensions",
+      "dumbbell-standing-triceps-extension",
+      "standing triceps extension"
+    ]
+  },
+  {
+    "name": "Dumbbell Walking Lunge",
+    "kind": "freeweight",
+    "aliases": [
+      "db walking lunge",
+      "dumbbell walking lunges",
+      "dumbbell-walking-lunge",
+      "walking lunge"
+    ]
+  },
+  {
+    "name": "Dumbbell Wrist Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "db wrist curl",
+      "dumbbell wrist carl",
+      "dumbbell wrist cull",
+      "dumbbell wrist curls",
+      "dumbbell wrist girl",
+      "dumbbell wrist pearl",
+      "dumbbell-wrist-curl",
+      "wrist curl"
+    ]
+  },
+  {
+    "name": "Dumbbell Wrist Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "db wrist extension",
+      "dumbbell wrist extends",
+      "dumbbell wrist extensions",
+      "dumbbell wrist extention",
+      "dumbbell wrist extentions",
+      "dumbbell-wrist-extension",
+      "wrist extension"
+    ]
+  },
+  {
+    "name": "Dynamic Side Plank",
+    "kind": "bodyweight",
+    "aliases": [
+      "dynamic side planks",
+      "dynamic-side-plank"
+    ]
+  },
+  {
+    "name": "Eccentric Heel Drop",
+    "kind": "freeweight",
+    "aliases": [
+      "eccentric heel drops",
+      "eccentric-heel-drop"
+    ]
+  },
+  {
+    "name": "Echo Bike",
+    "kind": "cardio",
+    "aliases": [
+      "echo bikes",
+      "echo-bike"
+    ]
+  },
+  {
+    "name": "Elliptical",
+    "kind": "cardio",
+    "aliases": [
+      "cross trainer",
+      "elliptic",
+      "elliptical machine",
+      "ellipticals",
+      "ellipticle"
+    ]
+  },
+  {
+    "name": "External Rotation",
+    "kind": "freeweight",
+    "aliases": [
+      "band external rotation",
+      "external rotations",
+      "external-rotation",
+      "rotator cuff"
+    ]
+  },
+  {
+    "name": "EZ Bar Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "cambered bar curl",
+      "easy bar curl",
+      "ez bar carl",
+      "ez bar cull",
+      "ez bar curls",
+      "ez bar girl",
+      "ez bar pearl",
+      "ez-bar curl",
+      "ez-bar-curl"
+    ]
+  },
+  {
+    "name": "EZ Bar Lying Triceps Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "ez bar lying triceps extensions",
+      "ez-bar-lying-triceps-extension"
+    ]
+  },
+  {
+    "name": "EZ Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "easy bar curl",
+      "easy curl",
+      "ez bar curl",
+      "ez bar curls",
+      "ez carl",
+      "ez cull",
+      "ez curls",
+      "ez girl",
+      "ez pearl",
+      "ez-curl"
+    ]
+  },
+  {
+    "name": "Face Pull",
+    "kind": "freeweight",
+    "aliases": [
+      "cable face pull",
+      "face paul",
+      "face pole",
+      "face poles",
+      "face pool",
+      "face pulls",
+      "face-pull",
+      "facepull",
+      "facepulls",
+      "faith pull",
+      "rear delt pull"
+    ]
+  },
+  {
+    "name": "Farmer's Walk",
+    "kind": "freeweight",
+    "aliases": [
+      "farmer carry",
+      "farmer walk",
+      "farmer's walks",
+      "farmer's-walk",
+      "farmers carries",
+      "farmers carry",
+      "farmers walk",
+      "farmers walks",
+      "farmers-walk",
+      "loaded carry"
+    ]
+  },
+  {
+    "name": "Fat Bar Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "fat bar deadlifts",
+      "fat-bar-deadlift"
+    ]
+  },
+  {
+    "name": "Feet-Up Bench Press",
+    "kind": "freeweight",
+    "aliases": [
+      "feet up ben press",
+      "feet up ben's press",
+      "feet up bench breast",
+      "feet up bench press",
+      "feet up bench pressed",
+      "feet up bench presses",
+      "feet up bench prest",
+      "feet up bens press",
+      "feet up binge press",
+      "feet-up bench presses",
+      "feet-up-bench-press",
+      "feetup bench press"
+    ]
+  },
+  {
+    "name": "Fire Hydrants",
+    "kind": "freeweight",
+    "aliases": [
+      "fire hydrant",
+      "fire hydrantses",
+      "fire-hydrants"
+    ]
+  },
+  {
+    "name": "Floor Back Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "floor back extends",
+      "floor back extensions",
+      "floor back extention",
+      "floor back extentions",
+      "floor-back-extension"
+    ]
+  },
+  {
+    "name": "Floor Press",
+    "kind": "freeweight",
+    "aliases": [
+      "floor breast",
+      "floor pressed",
+      "floor presses",
+      "floor prest",
+      "floor-press"
+    ]
+  },
+  {
+    "name": "Forearm Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "forearm curls",
+      "forearms curl",
+      "forearms curls",
+      "forearm-curl",
+      "fore arm curl",
+      "fore arm curls"
+    ]
+  },
+  {
+    "name": "Frog Pumps",
+    "kind": "freeweight",
+    "aliases": [
+      "frog pump",
+      "frog pumpses",
+      "frog-pumps"
+    ]
+  },
+  {
+    "name": "Front Hold",
+    "kind": "freeweight",
+    "aliases": [
+      "front holds",
+      "front-hold"
+    ]
+  },
+  {
+    "name": "Front Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "front delts raise",
+      "front race",
+      "front raises",
+      "front rays",
+      "front raze",
+      "front-raise"
+    ]
+  },
+  {
+    "name": "Front Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "front scott",
+      "front squad",
+      "front squats",
+      "front-squat",
+      "fsquat"
+    ]
+  },
+  {
+    "name": "Functional Trainer",
+    "kind": "machine",
+    "aliases": [
+      "cable crossover machine",
+      "cable functional trainer",
+      "dual cable",
+      "functional trainers",
+      "functional-trainer"
+    ]
+  },
+  {
+    "name": "Glute Bridge",
+    "kind": "freeweight",
+    "aliases": [
+      "bridges",
+      "flute bridge",
+      "gloot bridge",
+      "glue bridge",
+      "glut bridge",
+      "glute bridges",
+      "glute-bridge",
+      "hip bridge",
+      "shoulder bridge"
+    ]
+  },
+  {
+    "name": "Glute Bridge Machine",
+    "kind": "machine",
+    "aliases": [
+      "flute bridge machine",
+      "gloot bridge machine",
+      "glue bridge machine",
+      "glut bridge machine",
+      "glute bridge",
+      "glute bridge machines",
+      "glute-bridge-machine"
+    ]
+  },
+  {
+    "name": "Glute-Ham Raise",
+    "kind": "machine",
+    "aliases": [
+      "flute ham raise",
+      "ghr",
+      "gloot ham raise",
+      "glue ham raise",
+      "glut ham raise",
+      "glute ham race",
+      "glute ham raise",
+      "glute ham raises",
+      "glute ham rays",
+      "glute ham raze",
+      "glute-ham raises",
+      "glute-ham-raise",
+      "gluteham raise"
+    ]
+  },
+  {
+    "name": "Glute Kickback",
+    "kind": "machine",
+    "aliases": [
+      "booty builder",
+      "booty builder kickback",
+      "donkey kick",
+      "donkey kicks",
+      "flute kickback",
+      "gloot kickback",
+      "glue kickback",
+      "glut kickback",
+      "glute kick",
+      "glute kick back",
+      "glute kickbacks",
+      "glute-kickback",
+      "kickback",
+      "kickbacks"
+    ]
+  },
+  {
+    "name": "Glute Machine",
+    "kind": "machine",
+    "aliases": [
+      "booty builder",
+      "flute machine",
+      "gloot machine",
+      "glue machine",
+      "glut machine",
+      "glute",
+      "glute kickback machine",
+      "glute machines",
+      "glute-machine",
+      "glutes",
+      "glutes machine"
+    ]
+  },
+  {
+    "name": "Goblet Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "goblet",
+      "goblet scott",
+      "goblet squad",
+      "goblet squats",
+      "goblet-squat"
+    ]
+  },
+  {
+    "name": "Good Morning",
+    "kind": "freeweight",
+    "aliases": [
+      "gm",
+      "good mornings",
+      "good-morning",
+      "goodmornings"
+    ]
+  },
+  {
+    "name": "Gorilla Row",
+    "kind": "freeweight",
+    "aliases": [
+      "gorilla rho",
+      "gorilla roe",
+      "gorilla rows",
+      "gorilla-row"
+    ]
+  },
+  {
+    "name": "Gripper",
+    "kind": "freeweight",
+    "aliases": [
+      "grippers"
+    ]
+  },
+  {
+    "name": "Ground to Overhead",
+    "kind": "freeweight",
+    "aliases": [
+      "ground to overheads",
+      "ground-to-overhead"
+    ]
+  },
+  {
+    "name": "Hack Squat",
+    "kind": "machine",
+    "aliases": [
+      "hack scott",
+      "hack squad",
+      "hack squat machine",
+      "hack squats",
+      "hack-squat",
+      "hacksquat",
+      "pendulum squat",
+      "v squat",
+      "v-squat"
+    ]
+  },
+  {
+    "name": "Hack Squat Machine",
+    "kind": "machine",
+    "aliases": [
+      "hack scott machine",
+      "hack squad machine",
+      "hack squat",
+      "hack squat machines",
+      "hack squats machine",
+      "hack-squat-machine"
+    ]
+  },
+  {
+    "name": "Half Air Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "half air scott",
+      "half air squad",
+      "half air squats",
+      "half-air-squat"
+    ]
+  },
+  {
+    "name": "Hammer Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "hammer carl",
+      "hammer cull",
+      "hammer curls",
+      "hammer girl",
+      "hammer pearl",
+      "hammer-curl",
+      "hammers",
+      "neutral curl",
+      "neutral curls"
+    ]
+  },
+  {
+    "name": "Handstand Push-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "handstand push up",
+      "handstand push-ups",
+      "handstand pushup",
+      "handstand-push-up"
+    ]
+  },
+  {
+    "name": "Hang Clean",
+    "kind": "freeweight",
+    "aliases": [
+      "hang cleans",
+      "hang-clean"
+    ]
+  },
+  {
+    "name": "Hang Power Clean",
+    "kind": "freeweight",
+    "aliases": [
+      "hang power cleans",
+      "hang-power-clean"
+    ]
+  },
+  {
+    "name": "Hang Power Snatch",
+    "kind": "freeweight",
+    "aliases": [
+      "hang power snatches",
+      "hang-power-snatch"
+    ]
+  },
+  {
+    "name": "Hang Snatch",
+    "kind": "freeweight",
+    "aliases": [
+      "hang snatches",
+      "hang-snatch"
+    ]
+  },
+  {
+    "name": "Hanging Knee Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "hanging knee race",
+      "hanging knee raises",
+      "hanging knee rays",
+      "hanging knee raze",
+      "hanging-knee-raise"
+    ]
+  },
+  {
+    "name": "Hanging Leg Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "hanging lag raise",
+      "hanging lead raise",
+      "hanging led raise",
+      "hanging leg race",
+      "hanging leg raises",
+      "hanging leg rays",
+      "hanging leg raze",
+      "hanging like raise",
+      "hanging-leg-raise",
+      "hlr"
+    ]
+  },
+  {
+    "name": "Hanging Sit-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "hanging sit up",
+      "hanging sit-ups",
+      "hanging situp",
+      "hanging-sit-up"
+    ]
+  },
+  {
+    "name": "Hanging Windshield Wiper",
+    "kind": "freeweight",
+    "aliases": [
+      "hanging windshield wipers",
+      "hanging-windshield-wiper"
+    ]
+  },
+  {
+    "name": "Heel Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "heel race",
+      "heel raises",
+      "heel rays",
+      "heel raze",
+      "heel-raise"
+    ]
+  },
+  {
+    "name": "Heel Walk",
+    "kind": "freeweight",
+    "aliases": [
+      "heel walks",
+      "heel-walk"
+    ]
+  },
+  {
+    "name": "High Row",
+    "kind": "machine",
+    "aliases": [
+      "high rho",
+      "high roe",
+      "high rows",
+      "high-row"
+    ]
+  },
+  {
+    "name": "High to Low Wood Chop with Band",
+    "kind": "freeweight",
+    "aliases": [
+      "high to low wood chop with bands",
+      "high-to-low-wood-chop-with-band"
+    ]
+  },
+  {
+    "name": "High to Low Wood Chop with Cable",
+    "kind": "freeweight",
+    "aliases": [
+      "high to low wood chop with cables",
+      "high-to-low-wood-chop-with-cable"
+    ]
+  },
+  {
+    "name": "Hip Abduction",
+    "kind": "machine",
+    "aliases": [
+      "abduction machine",
+      "abductor",
+      "abductor machine",
+      "abductors",
+      "hip ab",
+      "hip abductions",
+      "hip abductor",
+      "hip-abduction",
+      "outer thigh",
+      "outer thigh machine",
+      "outer thighs"
+    ]
+  },
+  {
+    "name": "Hip Abduction Against Band",
+    "kind": "machine",
+    "aliases": [
+      "hip abduction against bands",
+      "hip-abduction-against-band"
+    ]
+  },
+  {
+    "name": "Hip Abduction Machine",
+    "kind": "machine",
+    "aliases": [
+      "hip abduction",
+      "hip abduction machines",
+      "hip abductions machine",
+      "hip abductor machine",
+      "hip-abduction-machine"
+    ]
+  },
+  {
+    "name": "Hip Adduction",
+    "kind": "machine",
+    "aliases": [
+      "adduction machine",
+      "adductor",
+      "adductor machine",
+      "adductors",
+      "hip ad",
+      "hip adductions",
+      "hip adductor",
+      "hip-adduction",
+      "inner thigh",
+      "inner thigh machine",
+      "inner thighs"
+    ]
+  },
+  {
+    "name": "Hip Adduction Against Band",
+    "kind": "machine",
+    "aliases": [
+      "hip adduction against bands",
+      "hip-adduction-against-band"
+    ]
+  },
+  {
+    "name": "Hip Adduction Machine",
+    "kind": "machine",
+    "aliases": [
+      "hip adduction",
+      "hip adduction machines",
+      "hip adductions machine",
+      "hip adductor machine",
+      "hip-adduction-machine"
+    ]
+  },
+  {
+    "name": "Hip Thrust",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell hip thrust",
+      "hip thruster",
+      "hip thrusts",
+      "hip trust",
+      "hip trusts",
+      "hip-thrust",
+      "hipthrust"
+    ]
+  },
+  {
+    "name": "Hip Thrust Machine",
+    "kind": "machine",
+    "aliases": [
+      "hip thrust",
+      "hip thrust machines",
+      "hip-thrust-machine"
+    ]
+  },
+  {
+    "name": "Hip Thrust With Band Around Knees",
+    "kind": "freeweight",
+    "aliases": [
+      "hip thrust with band around knee",
+      "hip thrust with band around kneeses",
+      "hip-thrust-with-band-around-knees"
+    ]
+  },
+  {
+    "name": "Hollow Body Crunch",
+    "kind": "bodyweight",
+    "aliases": [
+      "hollow body crunches",
+      "hollow-body-crunch"
+    ]
+  },
+  {
+    "name": "Hollow Hold",
+    "kind": "bodyweight",
+    "aliases": [
+      "hollow holds",
+      "hollow-hold"
+    ]
+  },
+  {
+    "name": "Horizontal Wood Chop with Band",
+    "kind": "freeweight",
+    "aliases": [
+      "horizontal wood chop with bands",
+      "horizontal-wood-chop-with-band"
+    ]
+  },
+  {
+    "name": "Horizontal Wood Chop with Cable",
+    "kind": "freeweight",
+    "aliases": [
+      "horizontal wood chop with cables",
+      "horizontal-wood-chop-with-cable"
+    ]
+  },
+  {
+    "name": "Incline Bench Press",
+    "kind": "freeweight",
+    "aliases": [
+      "incline beach press",
+      "incline ben press",
+      "incline ben's press",
+      "incline bench",
+      "incline bench breast",
+      "incline bench pressed",
+      "incline bench presses",
+      "incline bench prest",
+      "incline bens press",
+      "incline binge press",
+      "incline bp",
+      "incline press",
+      "incline-bench-press"
+    ]
+  },
+  {
+    "name": "Incline Chest Press",
+    "kind": "freeweight",
+    "aliases": [
+      "incline chast press",
+      "incline chess press",
+      "incline chest breast",
+      "incline chest pressed",
+      "incline chest presses",
+      "incline chest prest",
+      "incline-chest-press"
+    ]
+  },
+  {
+    "name": "Incline Dumbbell Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "incline dumbbell carl",
+      "incline dumbbell cull",
+      "incline dumbbell curls",
+      "incline dumbbell girl",
+      "incline dumbbell pearl",
+      "incline-dumbbell-curl"
+    ]
+  },
+  {
+    "name": "Incline Dumbbell Press",
+    "kind": "freeweight",
+    "aliases": [
+      "db incline press",
+      "incline db press",
+      "incline dumbbell",
+      "incline dumbbell breast",
+      "incline dumbbell pressed",
+      "incline dumbbell presses",
+      "incline dumbbell prest",
+      "incline-dumbbell-press"
+    ]
+  },
+  {
+    "name": "Incline Push-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "incline push up",
+      "incline push-ups",
+      "incline pushup",
+      "incline-push-up"
+    ]
+  },
+  {
+    "name": "Inner Thigh Machine",
+    "kind": "machine",
+    "aliases": [
+      "hip adduction",
+      "inner thigh",
+      "inner thigh machine",
+      "inner thigh machines",
+      "inner thigh mashine",
+      "inner-thigh-machine"
+    ]
+  },
+  {
+    "name": "Inverted Row",
+    "kind": "freeweight",
+    "aliases": [
+      "inverted rho",
+      "inverted roe",
+      "inverted rows",
+      "inverted-row"
+    ]
+  },
+  {
+    "name": "Inverted Row with Underhand Grip",
+    "kind": "freeweight",
+    "aliases": [
+      "inverted row with underhand grips",
+      "inverted-row-with-underhand-grip"
+    ]
+  },
+  {
+    "name": "Jackknife Sit-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "jackknife sit up",
+      "jackknife sit-ups",
+      "jackknife situp",
+      "jackknife-sit-up"
+    ]
+  },
+  {
+    "name": "Jefferson Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "jefferson carl",
+      "jefferson cull",
+      "jefferson curls",
+      "jefferson girl",
+      "jefferson pearl",
+      "jefferson-curl"
+    ]
+  },
+  {
+    "name": "Jefferson Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "jefferson deadlifts",
+      "jefferson lift",
+      "jefferson-deadlift"
+    ]
+  },
+  {
+    "name": "Jerk",
+    "kind": "freeweight",
+    "aliases": [
+      "jerks"
+    ]
+  },
+  {
+    "name": "JM Press",
+    "kind": "freeweight",
+    "aliases": [
+      "jm breast",
+      "jm pressed",
+      "jm presses",
+      "jm prest",
+      "jm-press"
+    ]
+  },
+  {
+    "name": "Jump Rope",
+    "kind": "cardio",
+    "aliases": [
+      "jump ropes",
+      "jump-rope",
+      "jumping rope",
+      "skip rope",
+      "skipping",
+      "skipping rope"
+    ]
+  },
+  {
+    "name": "Jump Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "jump scott",
+      "jump squad",
+      "jump squats",
+      "jump-squat"
+    ]
+  },
+  {
+    "name": "Jumping Jack",
+    "kind": "bodyweight",
+    "aliases": [
+      "jumping jacks",
+      "jumping-jack"
+    ]
+  },
+  {
+    "name": "Jumping Lunge",
+    "kind": "freeweight",
+    "aliases": [
+      "jumping lunges",
+      "jumping-lunge"
+    ]
+  },
+  {
+    "name": "Jumping Muscle-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "jumping muscle up",
+      "jumping muscle-ups",
+      "jumping muscleup",
+      "jumping-muscle-up"
+    ]
+  },
+  {
+    "name": "Kettlebell Clean",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell cleans",
+      "kettlebell-clean"
+    ]
+  },
+  {
+    "name": "Kettlebell Clean and Jerk",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell clean and jerks",
+      "kettlebell-clean-and-jerk"
+    ]
+  },
+  {
+    "name": "Kettlebell Clean and Press",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell clean and presses",
+      "kettlebell-clean-and-press"
+    ]
+  },
+  {
+    "name": "Kettlebell Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell carl",
+      "kettlebell cull",
+      "kettlebell curls",
+      "kettlebell girl",
+      "kettlebell pearl",
+      "kettlebell-curl"
+    ]
+  },
+  {
+    "name": "Kettlebell Floor Press",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell floor breast",
+      "kettlebell floor pressed",
+      "kettlebell floor presses",
+      "kettlebell floor prest",
+      "kettlebell-floor-press"
+    ]
+  },
+  {
+    "name": "Kettlebell Front Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell front scott",
+      "kettlebell front squad",
+      "kettlebell front squats",
+      "kettlebell-front-squat"
+    ]
+  },
+  {
+    "name": "Kettlebell Halo",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell halos",
+      "kettlebell-halo"
+    ]
+  },
+  {
+    "name": "Kettlebell Plank Pull Through",
+    "kind": "bodyweight",
+    "aliases": [
+      "kettlebell plank pull throughs",
+      "kettlebell-plank-pull-through"
+    ]
+  },
+  {
+    "name": "Kettlebell Press",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell breast",
+      "kettlebell pressed",
+      "kettlebell presses",
+      "kettlebell prest",
+      "kettlebell-press"
+    ]
+  },
+  {
+    "name": "Kettlebell Push Press",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell push breast",
+      "kettlebell push pressed",
+      "kettlebell push presses",
+      "kettlebell push prest",
+      "kettlebell-push-press"
+    ]
+  },
+  {
+    "name": "Kettlebell Row",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell rho",
+      "kettlebell roe",
+      "kettlebell rows",
+      "kettlebell-row"
+    ]
+  },
+  {
+    "name": "Kettlebell Snatch",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell snatches",
+      "kettlebell-snatch"
+    ]
+  },
+  {
+    "name": "Kettlebell Swing",
+    "kind": "freeweight",
+    "aliases": [
+      "kb swing",
+      "kb swings",
+      "kettle bell swing",
+      "kettlebell swings",
+      "kettlebell-swing",
+      "russian swing"
+    ]
+  },
+  {
+    "name": "Kettlebell Thrusters",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell thruster",
+      "kettlebell thrusterses",
+      "kettlebell-thrusters"
+    ]
+  },
+  {
+    "name": "Kettlebell Tibialis Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell tibialis race",
+      "kettlebell tibialis raises",
+      "kettlebell tibialis rays",
+      "kettlebell tibialis raze",
+      "kettlebell-tibialis-raise"
+    ]
+  },
+  {
+    "name": "Kettlebell Windmill",
+    "kind": "freeweight",
+    "aliases": [
+      "kettlebell windmills",
+      "kettlebell-windmill"
+    ]
+  },
+  {
+    "name": "Kneeling Ab Wheel Roll-Out",
+    "kind": "freeweight",
+    "aliases": [
+      "kneeling ab wheel roll out",
+      "kneeling ab wheel roll-outs",
+      "kneeling ab wheel rollout",
+      "kneeling-ab-wheel-roll-out"
+    ]
+  },
+  {
+    "name": "Kneeling Incline Push-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "kneeling incline push up",
+      "kneeling incline push-ups",
+      "kneeling incline pushup",
+      "kneeling-incline-push-up"
+    ]
+  },
+  {
+    "name": "Kneeling Plank",
+    "kind": "bodyweight",
+    "aliases": [
+      "kneeling planks",
+      "kneeling-plank"
+    ]
+  },
+  {
+    "name": "Kneeling Push-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "kneeling push up",
+      "kneeling push-ups",
+      "kneeling pushup",
+      "kneeling-push-up"
+    ]
+  },
+  {
+    "name": "Kneeling Side Plank",
+    "kind": "bodyweight",
+    "aliases": [
+      "kneeling side planks",
+      "kneeling-side-plank"
+    ]
+  },
+  {
+    "name": "Kroc Row",
+    "kind": "freeweight",
+    "aliases": [
+      "kroc rho",
+      "kroc roe",
+      "kroc rows",
+      "kroc-row"
+    ]
+  },
+  {
+    "name": "L-Sit",
+    "kind": "bodyweight",
+    "aliases": [
+      "l sit",
+      "l-sits",
+      "lsit"
+    ]
+  },
+  {
+    "name": "Landmine Hack Squat",
+    "kind": "machine",
+    "aliases": [
+      "landmine hack scott",
+      "landmine hack squad",
+      "landmine hack squats",
+      "landmine-hack-squat"
+    ]
+  },
+  {
+    "name": "Landmine Press",
+    "kind": "freeweight",
+    "aliases": [
+      "land mine press",
+      "landmine breast",
+      "landmine pressed",
+      "landmine presses",
+      "landmine prest",
+      "landmine-press"
+    ]
+  },
+  {
+    "name": "Landmine Rotation",
+    "kind": "freeweight",
+    "aliases": [
+      "landmine rotations",
+      "landmine-rotation"
+    ]
+  },
+  {
+    "name": "Landmine Row",
+    "kind": "freeweight",
+    "aliases": [
+      "landmine rho",
+      "landmine roe",
+      "landmine rows",
+      "landmine-row",
+      "meadows-ish row",
+      "t bar landmine row"
+    ]
+  },
+  {
+    "name": "Landmine Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "landmine scott",
+      "landmine squad",
+      "landmine squats",
+      "landmine-squat"
+    ]
+  },
+  {
+    "name": "Lat Pulldown",
+    "kind": "machine",
+    "aliases": [
+      "lack pulldown",
+      "lat pull down",
+      "lat pull downs",
+      "lat pull-down",
+      "lat pulldowns",
+      "lat-pulldown",
+      "lats pulldown",
+      "pull down"
+    ]
+  },
+  {
+    "name": "Lat Pulldown With Neutral Grip",
+    "kind": "machine",
+    "aliases": [
+      "lat pulldown with neutral grips",
+      "lat-pulldown-with-neutral-grip"
+    ]
+  },
+  {
+    "name": "Lat Pulldown With Pronated Grip",
+    "kind": "machine",
+    "aliases": [
+      "lat pulldown with pronated grips",
+      "lat-pulldown-with-pronated-grip"
+    ]
+  },
+  {
+    "name": "Lat Pulldown With Supinated Grip",
+    "kind": "machine",
+    "aliases": [
+      "lat pulldown with supinated grips",
+      "lat-pulldown-with-supinated-grip"
+    ]
+  },
+  {
+    "name": "Lateral Bound",
+    "kind": "freeweight",
+    "aliases": [
+      "lateral bounds",
+      "lateral-bound"
+    ]
+  },
+  {
+    "name": "Lateral Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "db lateral raise",
+      "lat raise",
+      "lat raises",
+      "lateral race",
+      "lateral raises",
+      "lateral rays",
+      "lateral raze",
+      "lateral-raise",
+      "side lateral raise",
+      "side raise",
+      "side raises"
+    ]
+  },
+  {
+    "name": "Lateral Raise Machine",
+    "kind": "machine",
+    "aliases": [
+      "lateral race machine",
+      "lateral raise",
+      "lateral raise machines",
+      "lateral rays machine",
+      "lateral raze machine",
+      "lateral-raise-machine",
+      "machine lateral raise",
+      "side raise machine"
+    ]
+  },
+  {
+    "name": "Lateral Walk With Band",
+    "kind": "freeweight",
+    "aliases": [
+      "lateral walk with bands",
+      "lateral-walk-with-band"
+    ]
+  },
+  {
+    "name": "Leg Curl",
+    "kind": "machine",
+    "aliases": [
+      "girl curl",
+      "ham curl",
+      "ham curls",
+      "hamstring curl",
+      "hamstring curls",
+      "i girl",
+      "i girls",
+      "lag curl",
+      "lead curl",
+      "led curl",
+      "leg carl",
+      "leg cull",
+      "leg curls",
+      "leg girl",
+      "leg pearl",
+      "leg-curl",
+      "like curl",
+      "lying leg curl",
+      "neck curl",
+      "seated leg curl"
+    ]
+  },
+  {
+    "name": "Leg Curl On Ball",
+    "kind": "machine",
+    "aliases": [
+      "leg curl on balls",
+      "leg-curl-on-ball"
+    ]
+  },
+  {
+    "name": "Leg Extension",
+    "kind": "machine",
+    "aliases": [
+      "lag extension",
+      "lead extension",
+      "led extension",
+      "leg ext",
+      "leg extends",
+      "leg extensions",
+      "leg extention",
+      "leg extentions",
+      "leg-extension",
+      "like extension",
+      "quad extension",
+      "quad extensions"
+    ]
+  },
+  {
+    "name": "Leg Press",
+    "kind": "machine",
+    "aliases": [
+      "45 degree leg press",
+      "black press",
+      "lag press",
+      "lead press",
+      "led press",
+      "leg breast",
+      "leg press machine",
+      "leg pressed",
+      "leg presses",
+      "leg prest",
+      "leg-press",
+      "legpress",
+      "like press",
+      "squat press"
+    ]
+  },
+  {
+    "name": "Leg Raise",
+    "kind": "bodyweight",
+    "aliases": [
+      "hanging leg raise",
+      "lag raise",
+      "lead raise",
+      "led raise",
+      "leg race",
+      "leg raises",
+      "leg rays",
+      "leg raze",
+      "leg-raise",
+      "like raise"
+    ]
+  },
+  {
+    "name": "Low Row",
+    "kind": "machine",
+    "aliases": [
+      "low rho",
+      "low roe",
+      "low rows",
+      "low-row"
+    ]
+  },
+  {
+    "name": "Low to High Wood Chop with Band",
+    "kind": "freeweight",
+    "aliases": [
+      "low to high wood chop with bands",
+      "low-to-high-wood-chop-with-band"
+    ]
+  },
+  {
+    "name": "Low to High Wood Chop with Cable",
+    "kind": "freeweight",
+    "aliases": [
+      "low to high wood chop with cables",
+      "low-to-high-wood-chop-with-cable"
+    ]
+  },
+  {
+    "name": "Lunge",
+    "kind": "freeweight",
+    "aliases": []
+  },
+  {
+    "name": "Lying Bicep Cable Curl on Bench",
+    "kind": "freeweight",
+    "aliases": [
+      "lying bicep cable curl on benches",
+      "lying-bicep-cable-curl-on-bench"
+    ]
+  },
+  {
+    "name": "Lying Bicep Cable Curl on Floor",
+    "kind": "freeweight",
+    "aliases": [
+      "lying bicep cable curl on floors",
+      "lying-bicep-cable-curl-on-floor"
+    ]
+  },
+  {
+    "name": "Lying Dumbbell External Shoulder Rotation",
+    "kind": "freeweight",
+    "aliases": [
+      "lying dumbbell external shoulder rotations",
+      "lying-dumbbell-external-shoulder-rotation"
+    ]
+  },
+  {
+    "name": "Lying Dumbbell Internal Shoulder Rotation",
+    "kind": "freeweight",
+    "aliases": [
+      "lying dumbbell internal shoulder rotations",
+      "lying-dumbbell-internal-shoulder-rotation"
+    ]
+  },
+  {
+    "name": "Lying Leg Curl",
+    "kind": "machine",
+    "aliases": [
+      "lying ham curl",
+      "lying hamstring curl",
+      "lying lag curl",
+      "lying lead curl",
+      "lying led curl",
+      "lying leg carl",
+      "lying leg cull",
+      "lying leg curls",
+      "lying leg girl",
+      "lying leg pearl",
+      "lying like curl",
+      "lying-leg-curl",
+      "prone hamstring curl",
+      "prone leg curl",
+      "prone leg curls"
+    ]
+  },
+  {
+    "name": "Lying Leg Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "lying lag raise",
+      "lying lead raise",
+      "lying led raise",
+      "lying leg race",
+      "lying leg raises",
+      "lying leg rays",
+      "lying leg raze",
+      "lying like raise",
+      "lying-leg-raise"
+    ]
+  },
+  {
+    "name": "Lying Neck Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "lying neck carl",
+      "lying neck cull",
+      "lying neck curls",
+      "lying neck girl",
+      "lying neck pearl",
+      "lying-neck-curl"
+    ]
+  },
+  {
+    "name": "Lying Neck Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "lying neck extends",
+      "lying neck extensions",
+      "lying neck extention",
+      "lying neck extentions",
+      "lying-neck-extension"
+    ]
+  },
+  {
+    "name": "Lying Windshield Wiper",
+    "kind": "freeweight",
+    "aliases": [
+      "lying windshield wipers",
+      "lying-windshield-wiper"
+    ]
+  },
+  {
+    "name": "Lying Windshield Wiper with Bent Knees",
+    "kind": "freeweight",
+    "aliases": [
+      "lying windshield wiper with bent knee",
+      "lying windshield wiper with bent kneeses",
+      "lying-windshield-wiper-with-bent-knees"
+    ]
+  },
+  {
+    "name": "Machine Bicep Curl",
+    "kind": "machine",
+    "aliases": [
+      "machine bicep carl",
+      "machine bicep cull",
+      "machine bicep curls",
+      "machine bicep girl",
+      "machine bicep pearl",
+      "machine biceps curl",
+      "machine bycep curl",
+      "machine-bicep-curl"
+    ]
+  },
+  {
+    "name": "Machine Chest Fly",
+    "kind": "machine",
+    "aliases": [
+      "machine chast fly",
+      "machine chess fly",
+      "machine chest flies",
+      "machine chest flye",
+      "machine chest flyes",
+      "machine fly",
+      "machine pec fly",
+      "machine-chest-fly"
+    ]
+  },
+  {
+    "name": "Machine Chest Press",
+    "kind": "machine",
+    "aliases": [
+      "chest press machine",
+      "machine chast press",
+      "machine chess press",
+      "machine chest breast",
+      "machine chest pressed",
+      "machine chest presses",
+      "machine chest prest",
+      "machine-chest-press"
+    ]
+  },
+  {
+    "name": "Machine Crunch",
+    "kind": "machine",
+    "aliases": [
+      "machine crunches",
+      "machine-crunch"
+    ]
+  },
+  {
+    "name": "Machine Glute Kickbacks",
+    "kind": "machine",
+    "aliases": [
+      "machine flute kickbacks",
+      "machine gloot kickbacks",
+      "machine glue kickbacks",
+      "machine glut kickbacks",
+      "machine glute kickback",
+      "machine glute kickbackses",
+      "machine-glute-kickbacks"
+    ]
+  },
+  {
+    "name": "Machine Lat Pulldown",
+    "kind": "machine",
+    "aliases": [
+      "machine lack pulldown",
+      "machine lat pull-down",
+      "machine lat pulldowns",
+      "machine lats pulldown",
+      "machine-lat-pulldown"
+    ]
+  },
+  {
+    "name": "Machine Lateral Raise",
+    "kind": "machine",
+    "aliases": [
+      "machine lateral race",
+      "machine lateral raises",
+      "machine lateral rays",
+      "machine lateral raze",
+      "machine-lateral-raise"
+    ]
+  },
+  {
+    "name": "Machine Overhead Triceps Extension",
+    "kind": "machine",
+    "aliases": [
+      "machine overhead triceps extensions",
+      "machine-overhead-triceps-extension"
+    ]
+  },
+  {
+    "name": "Machine Shoulder Press",
+    "kind": "machine",
+    "aliases": [
+      "machine boulder press",
+      "machine shoulder breast",
+      "machine shoulder pressed",
+      "machine shoulder presses",
+      "machine shoulder prest",
+      "machine shoulders press",
+      "machine-shoulder-press"
+    ]
+  },
+  {
+    "name": "Meadows Row",
+    "kind": "freeweight",
+    "aliases": [
+      "meadows rho",
+      "meadows roe",
+      "meadows rows",
+      "meadows-row"
+    ]
+  },
+  {
+    "name": "Medicine Ball Chest Pass",
+    "kind": "freeweight",
+    "aliases": [
+      "medicine ball chest passes",
+      "medicine-ball-chest-pass"
+    ]
+  },
+  {
+    "name": "Military Press",
+    "kind": "freeweight",
+    "aliases": [
+      "mil press",
+      "military breast",
+      "military pressed",
+      "military presses",
+      "military prest",
+      "military-press",
+      "strict press"
+    ]
+  },
+  {
+    "name": "Monkey Row",
+    "kind": "freeweight",
+    "aliases": [
+      "monkey rho",
+      "monkey roe",
+      "monkey rows",
+      "monkey-row"
+    ]
+  },
+  {
+    "name": "Mountain Climber",
+    "kind": "bodyweight",
+    "aliases": [
+      "mountain climbers",
+      "mountain-climber"
+    ]
+  },
+  {
+    "name": "Mountain Climbers",
+    "kind": "freeweight",
+    "aliases": [
+      "mountain climber",
+      "mountain climberses",
+      "mountain-climbers"
+    ]
+  },
+  {
+    "name": "Multi Hip",
+    "kind": "freeweight",
+    "aliases": [
+      "multi hip machine",
+      "multi hips",
+      "multi-hip",
+      "multihip"
+    ]
+  },
+  {
+    "name": "Muscle-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "muscle up",
+      "muscle-ups",
+      "muscleup"
+    ]
+  },
+  {
+    "name": "Neutral Close-Grip Lat Pulldown",
+    "kind": "machine",
+    "aliases": [
+      "neutral close grip lat pulldown",
+      "neutral close-grip lat pulldowns",
+      "neutral closegrip lat pulldown",
+      "neutral-close-grip-lat-pulldown"
+    ]
+  },
+  {
+    "name": "Nordic Curl",
+    "kind": "bodyweight",
+    "aliases": [
+      "nordic carl",
+      "nordic cull",
+      "nordic curls",
+      "nordic girl",
+      "nordic hamstring curl",
+      "nordic pearl",
+      "nordic-curl",
+      "nordics"
+    ]
+  },
+  {
+    "name": "Nordic Hamstring Eccentric",
+    "kind": "freeweight",
+    "aliases": [
+      "nordic hamstring eccentrics",
+      "nordic-hamstring-eccentric"
+    ]
+  },
+  {
+    "name": "Oblique Crunch",
+    "kind": "bodyweight",
+    "aliases": [
+      "oblique crunches",
+      "oblique-crunch"
+    ]
+  },
+  {
+    "name": "Oblique Sit-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "oblique sit up",
+      "oblique sit-ups",
+      "oblique situp",
+      "oblique-sit-up"
+    ]
+  },
+  {
+    "name": "One-Arm Landmine Press",
+    "kind": "freeweight",
+    "aliases": [
+      "one arm landmine breast",
+      "one arm landmine press",
+      "one arm landmine pressed",
+      "one arm landmine presses",
+      "one arm landmine prest",
+      "one-arm landmine presses",
+      "one-arm-landmine-press",
+      "onearm landmine press"
+    ]
+  },
+  {
+    "name": "One-Handed Bar Hang",
+    "kind": "freeweight",
+    "aliases": [
+      "one handed bar hang",
+      "one-handed bar hangs",
+      "one-handed-bar-hang",
+      "onehanded bar hang"
+    ]
+  },
+  {
+    "name": "One-Handed Cable Row",
+    "kind": "freeweight",
+    "aliases": [
+      "one handed cable rho",
+      "one handed cable roe",
+      "one handed cable row",
+      "one-handed cable rows",
+      "one-handed-cable-row",
+      "onehanded cable row"
+    ]
+  },
+  {
+    "name": "One-Handed Kettlebell Swing",
+    "kind": "freeweight",
+    "aliases": [
+      "one handed kettlebell swing",
+      "one-handed kettlebell swings",
+      "one-handed-kettlebell-swing",
+      "onehanded kettlebell swing"
+    ]
+  },
+  {
+    "name": "One-Handed Lat Pulldown",
+    "kind": "machine",
+    "aliases": [
+      "one handed lack pulldown",
+      "one handed lat pull-down",
+      "one handed lat pulldown",
+      "one handed lat pulldowns",
+      "one handed lats pulldown",
+      "one-handed lat pulldowns",
+      "one-handed-lat-pulldown",
+      "onehanded lat pulldown"
+    ]
+  },
+  {
+    "name": "One-Legged Glute Bridge",
+    "kind": "freeweight",
+    "aliases": [
+      "one legged flute bridge",
+      "one legged gloot bridge",
+      "one legged glue bridge",
+      "one legged glut bridge",
+      "one legged glute bridge",
+      "one-legged glute bridges",
+      "one-legged-glute-bridge",
+      "onelegged glute bridge"
+    ]
+  },
+  {
+    "name": "One-Legged Hip Thrust",
+    "kind": "freeweight",
+    "aliases": [
+      "one legged hip thrust",
+      "one-legged hip thrusts",
+      "one-legged-hip-thrust",
+      "onelegged hip thrust"
+    ]
+  },
+  {
+    "name": "One-Legged Leg Extension",
+    "kind": "machine",
+    "aliases": [
+      "one legged lag extension",
+      "one legged lead extension",
+      "one legged led extension",
+      "one legged leg extends",
+      "one legged leg extension",
+      "one legged leg extention",
+      "one legged leg extentions",
+      "one legged like extension",
+      "one-legged leg extensions",
+      "one-legged-leg-extension",
+      "onelegged leg extension"
+    ]
+  },
+  {
+    "name": "One-Legged Lying Leg Curl",
+    "kind": "machine",
+    "aliases": [
+      "one legged lying leg curl",
+      "one-legged lying leg curls",
+      "one-legged-lying-leg-curl",
+      "onelegged lying leg curl"
+    ]
+  },
+  {
+    "name": "One-Legged Seated Leg Curl",
+    "kind": "machine",
+    "aliases": [
+      "one legged seated leg curl",
+      "one-legged seated leg curls",
+      "one-legged-seated-leg-curl",
+      "onelegged seated leg curl"
+    ]
+  },
+  {
+    "name": "Outer Thigh Machine",
+    "kind": "machine",
+    "aliases": [
+      "hip abduction",
+      "outer thigh",
+      "outer thigh machine",
+      "outer thigh machines",
+      "outer thigh mashine",
+      "outer-thigh-machine"
+    ]
+  },
+  {
+    "name": "Overhead Cable Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "overhead cable carl",
+      "overhead cable cull",
+      "overhead cable curls",
+      "overhead cable girl",
+      "overhead cable pearl",
+      "overhead-cable-curl"
+    ]
+  },
+  {
+    "name": "Overhead Cable Triceps Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "overhead cable triceps extensions",
+      "overhead-cable-triceps-extension"
+    ]
+  },
+  {
+    "name": "Overhead Press",
+    "kind": "freeweight",
+    "aliases": [
+      "ohp",
+      "ohps",
+      "overhead breast",
+      "overhead pressed",
+      "overhead presses",
+      "overhead prest",
+      "overhead-press",
+      "shoulder press standing",
+      "standing press",
+      "strict press"
+    ]
+  },
+  {
+    "name": "Overhead Tricep Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "oh tricep extension",
+      "overhead tricep",
+      "overhead tricep extends",
+      "overhead tricep extensions",
+      "overhead tricep extention",
+      "overhead tricep extentions",
+      "overhead triceps extension",
+      "overhead trycep extension",
+      "overhead-tricep-extension"
+    ]
+  },
+  {
+    "name": "Pallof Press",
+    "kind": "freeweight",
+    "aliases": [
+      "anti rotation press",
+      "pallof",
+      "pallof breast",
+      "pallof pressed",
+      "pallof presses",
+      "pallof prest",
+      "pallof-press"
+    ]
+  },
+  {
+    "name": "Pause Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "pause deadlifts",
+      "pause-deadlift"
+    ]
+  },
+  {
+    "name": "Pause Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "pause scott",
+      "pause squad",
+      "pause squats",
+      "pause-squat"
+    ]
+  },
+  {
+    "name": "Pec Deck",
+    "kind": "machine",
+    "aliases": [
+      "butterflies",
+      "butterfly",
+      "chest fly machine",
+      "pec decks",
+      "pec fly",
+      "pec flye",
+      "pec flyes",
+      "pec flys",
+      "pec-deck",
+      "peck deck",
+      "butter fly",
+      "butter flies"
+    ]
+  },
+  {
+    "name": "Pectoral Fly",
+    "kind": "freeweight",
+    "aliases": [
+      "pectoral flies",
+      "pectoral flye",
+      "pectoral flyes",
+      "pectoral-fly"
+    ]
+  },
+  {
+    "name": "Pendlay Row",
+    "kind": "freeweight",
+    "aliases": [
+      "pendlay rho",
+      "pendlay roe",
+      "pendlay rows",
+      "pendlay-row"
+    ]
+  },
+  {
+    "name": "Pendulum Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "pendulum scott",
+      "pendulum squad",
+      "pendulum squats",
+      "pendulum-squat"
+    ]
+  },
+  {
+    "name": "Pin Bench Press",
+    "kind": "freeweight",
+    "aliases": [
+      "pin ben press",
+      "pin ben's press",
+      "pin bench breast",
+      "pin bench pressed",
+      "pin bench presses",
+      "pin bench prest",
+      "pin bens press",
+      "pin binge press",
+      "pin-bench-press"
+    ]
+  },
+  {
+    "name": "Pin Press",
+    "kind": "freeweight",
+    "aliases": [
+      "pin breast",
+      "pin pressed",
+      "pin presses",
+      "pin prest",
+      "pin-press"
+    ]
+  },
+  {
+    "name": "Pin Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "pin scott",
+      "pin squad",
+      "pin squats",
+      "pin-squat"
+    ]
+  },
+  {
+    "name": "Pistol Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "pistol scott",
+      "pistol squad",
+      "pistol squats",
+      "pistol-squat"
+    ]
+  },
+  {
+    "name": "Plank",
+    "kind": "bodyweight",
+    "aliases": [
+      "forearm plank",
+      "front plank",
+      "planks"
+    ]
+  },
+  {
+    "name": "Plank to Push-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "plank to push up",
+      "plank to push-ups",
+      "plank to pushup",
+      "plank-to-push-up"
+    ]
+  },
+  {
+    "name": "Plank with Leg Lifts",
+    "kind": "bodyweight",
+    "aliases": [
+      "plank with leg lift",
+      "plank with leg liftses",
+      "plank-with-leg-lifts"
+    ]
+  },
+  {
+    "name": "Plank with Shoulder Taps",
+    "kind": "bodyweight",
+    "aliases": [
+      "plank with shoulder tap",
+      "plank with shoulder tapses",
+      "plank-with-shoulder-taps"
+    ]
+  },
+  {
+    "name": "Plate Front Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "plate front race",
+      "plate front raises",
+      "plate front rays",
+      "plate front raze",
+      "plate-front-raise"
+    ]
+  },
+  {
+    "name": "Plate Pinch",
+    "kind": "freeweight",
+    "aliases": [
+      "plate pinches",
+      "plate-pinch"
+    ]
+  },
+  {
+    "name": "Plate Wrist Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "plate wrist carl",
+      "plate wrist cull",
+      "plate wrist curls",
+      "plate wrist girl",
+      "plate wrist pearl",
+      "plate-wrist-curl"
+    ]
+  },
+  {
+    "name": "Poliquin Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "poliquin race",
+      "poliquin raises",
+      "poliquin rays",
+      "poliquin raze",
+      "poliquin-raise"
+    ]
+  },
+  {
+    "name": "Poliquin Step-Up",
+    "kind": "freeweight",
+    "aliases": [
+      "poliquin step up",
+      "poliquin step-ups",
+      "poliquin stepup",
+      "poliquin-step-up"
+    ]
+  },
+  {
+    "name": "Power Clean",
+    "kind": "freeweight",
+    "aliases": [
+      "pclean",
+      "power cleans",
+      "power-clean"
+    ]
+  },
+  {
+    "name": "Power Jerk",
+    "kind": "freeweight",
+    "aliases": [
+      "power jerks",
+      "power-jerk"
+    ]
+  },
+  {
+    "name": "Power Snatch",
+    "kind": "freeweight",
+    "aliases": [
+      "power snatches",
+      "power-snatch"
+    ]
+  },
+  {
+    "name": "Preacher Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "preach curl",
+      "preach curls",
+      "preacher carl",
+      "preacher cull",
+      "preacher curls",
+      "preacher girl",
+      "preacher pearl",
+      "preacher-curl",
+      "scott curl",
+      "scott curls"
+    ]
+  },
+  {
+    "name": "Preacher Curl Machine",
+    "kind": "machine",
+    "aliases": [
+      "machine preacher curl",
+      "preacher carl machine",
+      "preacher cull machine",
+      "preacher curl",
+      "preacher curl machines",
+      "preacher girl machine",
+      "preacher pearl machine",
+      "preacher-curl-machine",
+      "scott curl machine"
+    ]
+  },
+  {
+    "name": "Prisoner Get Up",
+    "kind": "freeweight",
+    "aliases": [
+      "prisoner get ups",
+      "prisoner-get-up"
+    ]
+  },
+  {
+    "name": "Prone Neck Bridge",
+    "kind": "freeweight",
+    "aliases": [
+      "prone neck bridges",
+      "prone-neck-bridge"
+    ]
+  },
+  {
+    "name": "Pull-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "chinups wide",
+      "paul up",
+      "pole up",
+      "pool up",
+      "pull up",
+      "pull ups",
+      "pull-ups",
+      "pullup",
+      "pullups"
+    ]
+  },
+  {
+    "name": "Pull-Up With a Neutral Grip",
+    "kind": "bodyweight",
+    "aliases": [
+      "pull up with a neutral grip",
+      "pull-up with a neutral grips",
+      "pull-up-with-a-neutral-grip",
+      "pullup with a neutral grip"
+    ]
+  },
+  {
+    "name": "Pullover Machine",
+    "kind": "machine",
+    "aliases": [
+      "chest pullover",
+      "machine pullover",
+      "pull over",
+      "pull overs",
+      "pullover",
+      "pullover machines",
+      "pullover-machine",
+      "pullovers"
+    ]
+  },
+  {
+    "name": "Push Press",
+    "kind": "freeweight",
+    "aliases": [
+      "push breast",
+      "push pressed",
+      "push presses",
+      "push prest",
+      "push-press",
+      "pushpress"
+    ]
+  },
+  {
+    "name": "Push-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "press up",
+      "press ups",
+      "push up",
+      "push ups",
+      "push-ups",
+      "pushup",
+      "pushups"
+    ]
+  },
+  {
+    "name": "Push-Up Against Wall",
+    "kind": "bodyweight",
+    "aliases": [
+      "push up against wall",
+      "push-up against walls",
+      "push-up-against-wall",
+      "pushup against wall"
+    ]
+  },
+  {
+    "name": "Push-Ups With Feet in Rings",
+    "kind": "bodyweight",
+    "aliases": [
+      "push ups with feet in rings",
+      "push-ups with feet in ring",
+      "push-ups with feet in ringses",
+      "push-ups-with-feet-in-rings",
+      "pushups with feet in rings"
+    ]
+  },
+  {
+    "name": "Rack Pull",
+    "kind": "freeweight",
+    "aliases": [
+      "partial deadlift",
+      "rack paul",
+      "rack pole",
+      "rack pool",
+      "rack pulls",
+      "rack-pull"
+    ]
+  },
+  {
+    "name": "Rear Delt Fly",
+    "kind": "freeweight",
+    "aliases": [
+      "rear delt flies",
+      "rear delt flye",
+      "rear delt flyes",
+      "rear delt flys",
+      "rear delts fly",
+      "rear fly",
+      "rear flyes",
+      "rear-delt-fly",
+      "reverse fly",
+      "reverse flye",
+      "reverse flyes"
+    ]
+  },
+  {
+    "name": "Rear Delt Machine",
+    "kind": "machine",
+    "aliases": [
+      "rear delt",
+      "rear delt fly machine",
+      "rear delt machines",
+      "rear delts",
+      "rear-delt-machine",
+      "reverse fly machine"
+    ]
+  },
+  {
+    "name": "Recumbent Bike",
+    "kind": "cardio",
+    "aliases": [
+      "recumbent",
+      "recumbent bikes",
+      "recumbent-bike"
+    ]
+  },
+  {
+    "name": "Renegade Row",
+    "kind": "freeweight",
+    "aliases": [
+      "renegade rho",
+      "renegade roe",
+      "renegade rows",
+      "renegade-row"
+    ]
+  },
+  {
+    "name": "Resistance Band Chest Fly",
+    "kind": "freeweight",
+    "aliases": [
+      "resistance band chest flies",
+      "resistance-band-chest-fly"
+    ]
+  },
+  {
+    "name": "Resistance Band Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "resistance band carl",
+      "resistance band cull",
+      "resistance band curls",
+      "resistance band girl",
+      "resistance band pearl",
+      "resistance-band-curl"
+    ]
+  },
+  {
+    "name": "Resistance Band Lateral Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "resistance band lateral raises",
+      "resistance-band-lateral-raise"
+    ]
+  },
+  {
+    "name": "Reverse Barbell Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "reverse barbell carl",
+      "reverse barbell cull",
+      "reverse barbell curls",
+      "reverse barbell girl",
+      "reverse barbell pearl",
+      "reverse curl",
+      "reverse curls",
+      "reverse-barbell-curl"
+    ]
+  },
+  {
+    "name": "Reverse Barbell Lunge",
+    "kind": "freeweight",
+    "aliases": [
+      "reverse barbell lunges",
+      "reverse-barbell-lunge"
+    ]
+  },
+  {
+    "name": "Reverse Body Weight Lunge",
+    "kind": "freeweight",
+    "aliases": [
+      "reverse body weight lunges",
+      "reverse-body-weight-lunge"
+    ]
+  },
+  {
+    "name": "Reverse Cable Flyes",
+    "kind": "freeweight",
+    "aliases": [
+      "reverse cable flye",
+      "reverse cable flyeses",
+      "reverse-cable-flyes"
+    ]
+  },
+  {
+    "name": "Reverse Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "overhand curl",
+      "pronated curl",
+      "reverse carl",
+      "reverse cull",
+      "reverse curls",
+      "reverse girl",
+      "reverse pearl",
+      "reverse-curl"
+    ]
+  },
+  {
+    "name": "Reverse Dumbbell Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "reverse db curl",
+      "reverse dumbbell carl",
+      "reverse dumbbell cull",
+      "reverse dumbbell curls",
+      "reverse dumbbell girl",
+      "reverse dumbbell pearl",
+      "reverse-dumbbell-curl"
+    ]
+  },
+  {
+    "name": "Reverse Dumbbell Flyes",
+    "kind": "freeweight",
+    "aliases": [
+      "reverse dumbbell flye",
+      "reverse dumbbell flyeses",
+      "reverse-dumbbell-flyes"
+    ]
+  },
+  {
+    "name": "Reverse Dumbbell Flyes on Incline Bench",
+    "kind": "freeweight",
+    "aliases": [
+      "reverse dumbbell flyes on incline benches",
+      "reverse-dumbbell-flyes-on-incline-bench"
+    ]
+  },
+  {
+    "name": "Reverse Dumbbell Lunge",
+    "kind": "freeweight",
+    "aliases": [
+      "reverse dumbbell lunges",
+      "reverse-dumbbell-lunge"
+    ]
+  },
+  {
+    "name": "Reverse Hyperextension",
+    "kind": "freeweight",
+    "aliases": [
+      "reverse hyper",
+      "reverse hyperextensions",
+      "reverse hypers",
+      "reverse-hyperextension"
+    ]
+  },
+  {
+    "name": "Reverse Machine Fly",
+    "kind": "machine",
+    "aliases": [
+      "reverse machine flies",
+      "reverse machine flye",
+      "reverse machine flyes",
+      "reverse-machine-fly"
+    ]
+  },
+  {
+    "name": "Reverse Nordic",
+    "kind": "freeweight",
+    "aliases": [
+      "reverse nordics",
+      "reverse-nordic"
+    ]
+  },
+  {
+    "name": "Reverse Wrist Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "reverse wrist curls",
+      "reverse-wrist-curl",
+      "reverse forearm curl",
+      "reverse forearm curls",
+      "reverse wrist extension"
+    ]
+  },
+  {
+    "name": "Ring Dip",
+    "kind": "bodyweight",
+    "aliases": [
+      "ring dips",
+      "ring-dip"
+    ]
+  },
+  {
+    "name": "Ring Pull-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "ring paul up",
+      "ring pole up",
+      "ring pool up",
+      "ring pull up",
+      "ring pull-ups",
+      "ring pullup",
+      "ring-pull-up"
+    ]
+  },
+  {
+    "name": "Ring Row",
+    "kind": "freeweight",
+    "aliases": [
+      "ring rho",
+      "ring roe",
+      "ring rows",
+      "ring-row"
+    ]
+  },
+  {
+    "name": "Romanian Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "rdl",
+      "rdls",
+      "romania deadlift",
+      "romanian",
+      "romanian deadlifts",
+      "romanian-deadlift",
+      "rumanian deadlift"
+    ]
+  },
+  {
+    "name": "Rope Pulldown",
+    "kind": "machine",
+    "aliases": [
+      "rope pull-down",
+      "rope pulldowns",
+      "rope-pulldown"
+    ]
+  },
+  {
+    "name": "Rope Pushdown",
+    "kind": "machine",
+    "aliases": [
+      "rope pushdowns",
+      "rope tricep pushdown",
+      "rope-pushdown",
+      "tricep rope pushdown"
+    ]
+  },
+  {
+    "name": "Row Machine",
+    "kind": "cardio",
+    "aliases": [
+      "c2 rower",
+      "c2 rowing machine",
+      "concept 2",
+      "concept 2 rower",
+      "concept2",
+      "concept2 rower",
+      "erg",
+      "ergometer",
+      "roll machine",
+      "roll machines",
+      "row machine",
+      "row machines",
+      "rower",
+      "rowers",
+      "rowing",
+      "rowing machine",
+      "rowing machines",
+      "rowing-machine"
+    ]
+  },
+  {
+    "name": "Russian Twist",
+    "kind": "bodyweight",
+    "aliases": [
+      "russian twists",
+      "russian-twist"
+    ]
+  },
+  {
+    "name": "Safety Bar Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "safety bar scott",
+      "safety bar squad",
+      "safety bar squats",
+      "safety squat bar",
+      "safety-bar-squat",
+      "ssb squat",
+      "ssb squats"
+    ]
+  },
+  {
+    "name": "Scap Pull-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "scap paul up",
+      "scap pole up",
+      "scap pool up",
+      "scap pull up",
+      "scap pull-ups",
+      "scap pullup",
+      "scap-pull-up"
+    ]
+  },
+  {
+    "name": "Seal Row",
+    "kind": "freeweight",
+    "aliases": [
+      "seal rho",
+      "seal roe",
+      "seal rows",
+      "seal-row"
+    ]
+  },
+  {
+    "name": "Seated Barbell Overhead Press",
+    "kind": "freeweight",
+    "aliases": [
+      "seated barbell overhead presses",
+      "seated-barbell-overhead-press"
+    ]
+  },
+  {
+    "name": "Seated Cable Chest Fly",
+    "kind": "freeweight",
+    "aliases": [
+      "seated cable chest flies",
+      "seated-cable-chest-fly"
+    ]
+  },
+  {
+    "name": "Seated Calf Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "seated cal raise",
+      "seated calf race",
+      "seated calf raises",
+      "seated calf rays",
+      "seated calf raze",
+      "seated calves",
+      "seated cap raise",
+      "seated cast raise",
+      "seated cat raise",
+      "seated-calf-raise"
+    ]
+  },
+  {
+    "name": "Seated Dumbbell Shoulder Press",
+    "kind": "freeweight",
+    "aliases": [
+      "seated dumbbell shoulder presses",
+      "seated-dumbbell-shoulder-press"
+    ]
+  },
+  {
+    "name": "Seated Kettlebell Press",
+    "kind": "freeweight",
+    "aliases": [
+      "seated kettlebell breast",
+      "seated kettlebell pressed",
+      "seated kettlebell presses",
+      "seated kettlebell prest",
+      "seated-kettlebell-press"
+    ]
+  },
+  {
+    "name": "Seated Leg Curl",
+    "kind": "machine",
+    "aliases": [
+      "seated ham curl",
+      "seated hamstring curl",
+      "seated lag curl",
+      "seated lead curl",
+      "seated led curl",
+      "seated leg carl",
+      "seated leg cull",
+      "seated leg curls",
+      "seated leg girl",
+      "seated leg pearl",
+      "seated like curl",
+      "seated-leg-curl"
+    ]
+  },
+  {
+    "name": "Seated Leg Press",
+    "kind": "machine",
+    "aliases": [
+      "seated lag press",
+      "seated lead press",
+      "seated led press",
+      "seated leg breast",
+      "seated leg pressed",
+      "seated leg presses",
+      "seated leg prest",
+      "seated like press",
+      "seated-leg-press"
+    ]
+  },
+  {
+    "name": "Seated Machine Row",
+    "kind": "machine",
+    "aliases": [
+      "seated machine rho",
+      "seated machine roe",
+      "seated machine rows",
+      "seated-machine-row"
+    ]
+  },
+  {
+    "name": "Seated Row",
+    "kind": "machine",
+    "aliases": [
+      "cable seated row",
+      "chest supported row",
+      "seat ed row",
+      "seat row",
+      "seated rho",
+      "seated roe",
+      "seated rows",
+      "seated-row",
+      "seeded row"
+    ]
+  },
+  {
+    "name": "Seated Smith Machine Shoulder Press",
+    "kind": "machine",
+    "aliases": [
+      "seat ed smith machine shoulder press",
+      "seated smith machine shoulder press",
+      "seated smith machine shoulder presses",
+      "seated smith shoulder press",
+      "seated smith shoulder presses",
+      "seated-smith-machine-shoulder-press"
+    ]
+  },
+  {
+    "name": "Shallow Body Weight Lunge",
+    "kind": "freeweight",
+    "aliases": [
+      "shallow body weight lunges",
+      "shallow-body-weight-lunge"
+    ]
+  },
+  {
+    "name": "Shoulder Press",
+    "kind": "freeweight",
+    "aliases": [
+      "boulder press",
+      "machine shoulder press",
+      "ohp",
+      "overhead press",
+      "shoulder breast",
+      "shoulder pressed",
+      "shoulder presses",
+      "shoulder prest",
+      "shoulder-press",
+      "shoulderpress",
+      "shoulders press"
+    ]
+  },
+  {
+    "name": "Shoulder Press Machine",
+    "kind": "machine",
+    "aliases": [
+      "boulder press machine",
+      "machine shoulder press",
+      "ohp machine",
+      "shoulder breast machine",
+      "shoulder press",
+      "shoulder press machines",
+      "shoulder pressed machine",
+      "shoulder presses machine",
+      "shoulder prest machine",
+      "shoulder-press-machine",
+      "shoulders press machine"
+    ]
+  },
+  {
+    "name": "Shrug",
+    "kind": "freeweight",
+    "aliases": [
+      "barbell shrug",
+      "db shrug",
+      "dumbbell shrug",
+      "trap shrug"
+    ]
+  },
+  {
+    "name": "Side Lunges",
+    "kind": "freeweight",
+    "aliases": [
+      "side lunge",
+      "side lungeses",
+      "side-lunges"
+    ]
+  },
+  {
+    "name": "Side Plank",
+    "kind": "bodyweight",
+    "aliases": [
+      "side planks",
+      "side-plank"
+    ]
+  },
+  {
+    "name": "Single Leg Deadlift with Kettlebell",
+    "kind": "freeweight",
+    "aliases": [
+      "single leg deadlift with kettlebells",
+      "single-leg-deadlift-with-kettlebell"
+    ]
+  },
+  {
+    "name": "Single Leg Romanian Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "single leg romanian deadlifts",
+      "single-leg-romanian-deadlift"
+    ]
+  },
+  {
+    "name": "Sissy Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "sissy scott",
+      "sissy squad",
+      "sissy squats",
+      "sissy-squat"
+    ]
+  },
+  {
+    "name": "Sit-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "sit up",
+      "sit-ups",
+      "situp"
+    ]
+  },
+  {
+    "name": "SkiErg",
+    "kind": "cardio",
+    "aliases": [
+      "ski erg",
+      "ski machine",
+      "skiergs"
+    ]
+  },
+  {
+    "name": "Skull Crusher",
+    "kind": "freeweight",
+    "aliases": [
+      "lying tricep extension",
+      "lying triceps extension",
+      "scull crusher",
+      "skull crushers",
+      "skull-crusher",
+      "skullcrushers",
+      "skulls"
+    ]
+  },
+  {
+    "name": "Sled Pull",
+    "kind": "freeweight",
+    "aliases": [
+      "prowler pull",
+      "sled drag",
+      "sled paul",
+      "sled pole",
+      "sled pool",
+      "sled pulls",
+      "sled-pull"
+    ]
+  },
+  {
+    "name": "Sled Push",
+    "kind": "freeweight",
+    "aliases": [
+      "prowler",
+      "prowler push",
+      "sled pushes",
+      "sled-push"
+    ]
+  },
+  {
+    "name": "Smith Machine",
+    "kind": "machine",
+    "aliases": [
+      "smith",
+      "smith machines",
+      "smith press",
+      "smith squat",
+      "smith-machine"
+    ]
+  },
+  {
+    "name": "Smith Machine Bench Press",
+    "kind": "machine",
+    "aliases": [
+      "smith machine bench presses",
+      "smith-machine-bench-press"
+    ]
+  },
+  {
+    "name": "Smith Machine Bulgarian Split Squat",
+    "kind": "machine",
+    "aliases": [
+      "smith machine bulgarian split squats",
+      "smith-machine-bulgarian-split-squat"
+    ]
+  },
+  {
+    "name": "Smith Machine Deadlift",
+    "kind": "machine",
+    "aliases": [
+      "smith machine deadlifts",
+      "smith-machine-deadlift"
+    ]
+  },
+  {
+    "name": "Smith Machine Front Squat",
+    "kind": "machine",
+    "aliases": [
+      "smith machine front squats",
+      "smith-machine-front-squat"
+    ]
+  },
+  {
+    "name": "Smith Machine Hip Thrust",
+    "kind": "machine",
+    "aliases": [
+      "smith machine hip thrusts",
+      "smith-machine-hip-thrust"
+    ]
+  },
+  {
+    "name": "Smith Machine Incline Bench Press",
+    "kind": "machine",
+    "aliases": [
+      "smith machine incline bench presses",
+      "smith-machine-incline-bench-press"
+    ]
+  },
+  {
+    "name": "Smith Machine Landmine Press",
+    "kind": "machine",
+    "aliases": [
+      "smith machine landmine presses",
+      "smith-machine-landmine-press"
+    ]
+  },
+  {
+    "name": "Smith Machine Lunge",
+    "kind": "machine",
+    "aliases": [
+      "smith machine lunges",
+      "smith-machine-lunge"
+    ]
+  },
+  {
+    "name": "Smith Machine One-Handed Row",
+    "kind": "machine",
+    "aliases": [
+      "smith machine one handed rho",
+      "smith machine one handed row",
+      "smith machine one-handed rho",
+      "smith machine one-handed roll",
+      "smith machine one-handed rows",
+      "smith machine onehanded row",
+      "smith-machine-one-handed-row"
+    ]
+  },
+  {
+    "name": "Smith Machine Reverse Grip Bench Press",
+    "kind": "machine",
+    "aliases": [
+      "smith machine reverse grip bench presses",
+      "smith-machine-reverse-grip-bench-press"
+    ]
+  },
+  {
+    "name": "Smith Machine Romanian Deadlift",
+    "kind": "machine",
+    "aliases": [
+      "smith machine romanian deadlifts",
+      "smith-machine-romanian-deadlift"
+    ]
+  },
+  {
+    "name": "Smith Machine Skull Crushers",
+    "kind": "machine",
+    "aliases": [
+      "smith machine skull crusher",
+      "smith machine skull crusherses",
+      "smith-machine-skull-crushers"
+    ]
+  },
+  {
+    "name": "Smith Machine Squat",
+    "kind": "machine",
+    "aliases": [
+      "smith machine scott",
+      "smith machine squad",
+      "smith machine squats",
+      "smith-machine-squat"
+    ]
+  },
+  {
+    "name": "Snatch",
+    "kind": "freeweight",
+    "aliases": [
+      "snatches"
+    ]
+  },
+  {
+    "name": "Snatch Grip Behind the Neck Press",
+    "kind": "freeweight",
+    "aliases": [
+      "snatch grip behind the neck presses",
+      "snatch-grip-behind-the-neck-press"
+    ]
+  },
+  {
+    "name": "Snatch Grip Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "snatch grip deadlifts",
+      "snatch-grip-deadlift"
+    ]
+  },
+  {
+    "name": "Spider Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "spider carl",
+      "spider cull",
+      "spider curls",
+      "spider girl",
+      "spider pearl",
+      "spider-curl"
+    ]
+  },
+  {
+    "name": "Spin Bike",
+    "kind": "cardio",
+    "aliases": [
+      "spin bikes",
+      "spin class bike",
+      "spin-bike"
+    ]
+  },
+  {
+    "name": "Split Jerk",
+    "kind": "freeweight",
+    "aliases": [
+      "split jerks",
+      "split-jerk"
+    ]
+  },
+  {
+    "name": "Spoto Press",
+    "kind": "freeweight",
+    "aliases": [
+      "spoto breast",
+      "spoto pressed",
+      "spoto presses",
+      "spoto prest",
+      "spoto-press"
+    ]
+  },
+  {
+    "name": "Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "back squat",
+      "back squats",
+      "bb squat",
+      "high bar squat",
+      "low bar squat",
+      "scott",
+      "squad"
+    ]
+  },
+  {
+    "name": "Squat Jerk",
+    "kind": "freeweight",
+    "aliases": [
+      "scott jerk",
+      "squad jerk",
+      "squat jerks",
+      "squat-jerk",
+      "squats jerk"
+    ]
+  },
+  {
+    "name": "Standing Cable Chest Fly",
+    "kind": "freeweight",
+    "aliases": [
+      "standing cable chest flies",
+      "standing-cable-chest-fly"
+    ]
+  },
+  {
+    "name": "Standing Cable Leg Extension",
+    "kind": "machine",
+    "aliases": [
+      "standing cable leg extensions",
+      "standing-cable-leg-extension"
+    ]
+  },
+  {
+    "name": "Standing Calf Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "standing cal raise",
+      "standing calf race",
+      "standing calf raises",
+      "standing calf rays",
+      "standing calf raze",
+      "standing calves",
+      "standing cap raise",
+      "standing cast raise",
+      "standing cat raise",
+      "standing-calf-raise"
+    ]
+  },
+  {
+    "name": "Standing Glute Kickback in Machine",
+    "kind": "machine",
+    "aliases": [
+      "standing glute kickback in",
+      "standing glute kickback in machines",
+      "standing-glute-kickback-in-machine"
+    ]
+  },
+  {
+    "name": "Standing Glute Push Down",
+    "kind": "freeweight",
+    "aliases": [
+      "standing glute push downs",
+      "standing-glute-push-down"
+    ]
+  },
+  {
+    "name": "Standing Hip Abduction Against Band",
+    "kind": "machine",
+    "aliases": [
+      "standing hip abduction against bands",
+      "standing-hip-abduction-against-band"
+    ]
+  },
+  {
+    "name": "Standing Hip Flexor Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "standing hip flexor raises",
+      "standing-hip-flexor-raise"
+    ]
+  },
+  {
+    "name": "Standing Leg Curl",
+    "kind": "machine",
+    "aliases": [
+      "standing lag curl",
+      "standing lead curl",
+      "standing led curl",
+      "standing leg carl",
+      "standing leg cull",
+      "standing leg curls",
+      "standing leg girl",
+      "standing leg pearl",
+      "standing like curl",
+      "standing-leg-curl"
+    ]
+  },
+  {
+    "name": "Standing Resistance Band Chest Fly",
+    "kind": "freeweight",
+    "aliases": [
+      "standing resistance band chest flies",
+      "standing-resistance-band-chest-fly"
+    ]
+  },
+  {
+    "name": "Stationary Bike",
+    "kind": "cardio",
+    "aliases": [
+      "stationary bikes",
+      "stationary cycle",
+      "stationary-bike"
+    ]
+  },
+  {
+    "name": "Step-Up",
+    "kind": "freeweight",
+    "aliases": [
+      "box step up",
+      "step up",
+      "step ups",
+      "step-ups",
+      "stepup",
+      "stepups"
+    ]
+  },
+  {
+    "name": "Stair Step Machine",
+    "kind": "cardio",
+    "aliases": [
+      "stair climber",
+      "stair climbers",
+      "stair master",
+      "stair step",
+      "stair step machine",
+      "stair step machines",
+      "stair stepper",
+      "stair steppers",
+      "stair steps",
+      "stair temper",
+      "stair tempers",
+      "stair-climber",
+      "stair-step machine",
+      "stair-step-machine",
+      "stair-stepper",
+      "stairclimber",
+      "stairmaster",
+      "stairs stepper",
+      "stairs steppers",
+      "stairs temper",
+      "stairs tempers",
+      "stairstep machine",
+      "stairstep machines",
+      "stairstepper",
+      "step master",
+      "step mill",
+      "step mills",
+      "stepmaster",
+      "stepmasters",
+      "stepmill",
+      "stepmills"
+    ]
+  },
+  {
+    "name": "Stiff-Leg Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "sldl",
+      "stiff lag deadlift",
+      "stiff lead deadlift",
+      "stiff led deadlift",
+      "stiff leg deadlift",
+      "stiff leg deadlifts",
+      "stiff like deadlift",
+      "stiff-leg deadlifts",
+      "stiff-leg-deadlift",
+      "stiffleg deadlift",
+      "straight leg deadlift"
+    ]
+  },
+  {
+    "name": "Stiff-Legged Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "sldl",
+      "stiff leg deadlift",
+      "stiff legged deadlift",
+      "stiff legged deadlifts",
+      "stiff-leg deadlift",
+      "stiff-legged deadlifts",
+      "stiff-legged-deadlift",
+      "stifflegged deadlift"
+    ]
+  },
+  {
+    "name": "Straight Arm Lat Pulldown",
+    "kind": "machine",
+    "aliases": [
+      "straight arm lat pulldowns",
+      "straight-arm-lat-pulldown"
+    ]
+  },
+  {
+    "name": "Straight-Arm Pulldown",
+    "kind": "machine",
+    "aliases": [
+      "stiff arm pulldown",
+      "straight arm pull down",
+      "straight arm pull-down",
+      "straight arm pulldown",
+      "straight arm pulldowns",
+      "straight-arm pulldowns",
+      "straight-arm-pulldown",
+      "straightarm pulldown"
+    ]
+  },
+  {
+    "name": "Straight-Bar Pushdown",
+    "kind": "machine",
+    "aliases": [
+      "bar pushdown",
+      "straight bar pushdown",
+      "straight-bar pushdowns",
+      "straight-bar-pushdown",
+      "straightbar pushdown"
+    ]
+  },
+  {
+    "name": "Sumo Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "sumo deadlifts",
+      "sumo deads",
+      "sumo dl",
+      "sumo-deadlift"
+    ]
+  },
+  {
+    "name": "Sumo Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "sumo scott",
+      "sumo squad",
+      "sumo squats",
+      "sumo-squat"
+    ]
+  },
+  {
+    "name": "Superman Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "superman race",
+      "superman raises",
+      "superman rays",
+      "superman raze",
+      "superman-raise"
+    ]
+  },
+  {
+    "name": "Supine Neck Bridge",
+    "kind": "freeweight",
+    "aliases": [
+      "supine neck bridges",
+      "supine-neck-bridge"
+    ]
+  },
+  {
+    "name": "T-Bar Row",
+    "kind": "freeweight",
+    "aliases": [
+      "t bar rho",
+      "t bar roe",
+      "t bar row",
+      "t-bar rows",
+      "t-bar-row",
+      "tbar row"
+    ]
+  },
+  {
+    "name": "Tate Press",
+    "kind": "freeweight",
+    "aliases": [
+      "tate breast",
+      "tate pressed",
+      "tate presses",
+      "tate prest",
+      "tate-press"
+    ]
+  },
+  {
+    "name": "Tibialis Band Pull",
+    "kind": "freeweight",
+    "aliases": [
+      "tibialis band paul",
+      "tibialis band pole",
+      "tibialis band pool",
+      "tibialis band pulls",
+      "tibialis-band-pull"
+    ]
+  },
+  {
+    "name": "Tibialis Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "tibialis race",
+      "tibialis raises",
+      "tibialis rays",
+      "tibialis raze",
+      "tibialis-raise"
+    ]
+  },
+  {
+    "name": "Torso Rotation",
+    "kind": "freeweight",
+    "aliases": [
+      "oblique machine",
+      "rotary torso",
+      "torso rotations",
+      "torso-rotation",
+      "trunk rotation"
+    ]
+  },
+  {
+    "name": "Towel Pull-Up",
+    "kind": "bodyweight",
+    "aliases": [
+      "towel paul up",
+      "towel pole up",
+      "towel pool up",
+      "towel pull up",
+      "towel pull-ups",
+      "towel pullup",
+      "towel-pull-up"
+    ]
+  },
+  {
+    "name": "Towel Row",
+    "kind": "freeweight",
+    "aliases": [
+      "towel rho",
+      "towel roe",
+      "towel rows",
+      "towel-row"
+    ]
+  },
+  {
+    "name": "Trap Bar Deadlift",
+    "kind": "freeweight",
+    "aliases": [
+      "hex bar",
+      "hex bar deadlift",
+      "hex bar dl",
+      "trap bar",
+      "trap bar deadlifts",
+      "trap bar dl",
+      "trap-bar-deadlift"
+    ]
+  },
+  {
+    "name": "Trap Bar Deadlift With High Handles",
+    "kind": "freeweight",
+    "aliases": [
+      "trap bar deadlift with high handle",
+      "trap bar deadlift with high handleses",
+      "trap-bar-deadlift-with-high-handles"
+    ]
+  },
+  {
+    "name": "Trap Bar Deadlift With Low Handles",
+    "kind": "freeweight",
+    "aliases": [
+      "trap bar deadlift with low handle",
+      "trap bar deadlift with low handleses",
+      "trap-bar-deadlift-with-low-handles"
+    ]
+  },
+  {
+    "name": "Treadmill",
+    "kind": "cardio",
+    "aliases": [
+      "run mill",
+      "running machine",
+      "tread",
+      "tread mill",
+      "treadmills"
+    ]
+  },
+  {
+    "name": "Tricep Bodyweight Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "tricep bodyweight extends",
+      "tricep bodyweight extensions",
+      "tricep bodyweight extention",
+      "tricep bodyweight extentions",
+      "tricep-bodyweight-extension",
+      "triceps bodyweight extension",
+      "trycep bodyweight extension"
+    ]
+  },
+  {
+    "name": "Tricep Extension",
+    "kind": "freeweight",
+    "aliases": [
+      "overhead extension",
+      "tri extension",
+      "tricep extends",
+      "tricep extensions",
+      "tricep extention",
+      "tricep extentions",
+      "tricep-extension",
+      "triceps extension",
+      "triceps extensions",
+      "trycep extension"
+    ]
+  },
+  {
+    "name": "Tricep Extension Machine",
+    "kind": "machine",
+    "aliases": [
+      "machine tricep extension",
+      "tricep extends machine",
+      "tricep extension",
+      "tricep extension machines",
+      "tricep extention machine",
+      "tricep extentions machine",
+      "tricep-extension-machine",
+      "triceps extension machine",
+      "trycep extension machine"
+    ]
+  },
+  {
+    "name": "Tricep Press Machine",
+    "kind": "machine",
+    "aliases": [
+      "tri press",
+      "tricep breast machine",
+      "tricep press",
+      "tricep press machines",
+      "tricep pressed machine",
+      "tricep presses machine",
+      "tricep prest machine",
+      "tricep-press-machine",
+      "triceps press",
+      "triceps press machine",
+      "trycep press machine"
+    ]
+  },
+  {
+    "name": "Tricep Pushdown",
+    "kind": "freeweight",
+    "aliases": [
+      "cable pushdown",
+      "tri pushdown",
+      "tricep pushdowns",
+      "tricep-pushdown",
+      "triceps pushdown",
+      "triceps pushdowns",
+      "trycep pushdown"
+    ]
+  },
+  {
+    "name": "Tricep Pushdown With Bar",
+    "kind": "freeweight",
+    "aliases": [
+      "tricep pushdown with bars",
+      "tricep-pushdown-with-bar"
+    ]
+  },
+  {
+    "name": "Tricep Pushdown With Rope",
+    "kind": "freeweight",
+    "aliases": [
+      "tricep pushdown with ropes",
+      "tricep-pushdown-with-rope"
+    ]
+  },
+  {
+    "name": "Turkish Get-Up",
+    "kind": "freeweight",
+    "aliases": [
+      "turkish get up",
+      "turkish get-ups",
+      "turkish getup",
+      "turkish-get-up"
+    ]
+  },
+  {
+    "name": "Upright Row",
+    "kind": "freeweight",
+    "aliases": [
+      "upright rho",
+      "upright roe",
+      "upright rows",
+      "upright-row"
+    ]
+  },
+  {
+    "name": "Vertical Leg Press",
+    "kind": "machine",
+    "aliases": [
+      "vertical lag press",
+      "vertical lead press",
+      "vertical led press",
+      "vertical leg breast",
+      "vertical leg pressed",
+      "vertical leg presses",
+      "vertical leg prest",
+      "vertical like press",
+      "vertical-leg-press"
+    ]
+  },
+  {
+    "name": "W Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "w race",
+      "w raises",
+      "w rays",
+      "w raze",
+      "w-raise"
+    ]
+  },
+  {
+    "name": "Walking Lunge",
+    "kind": "freeweight",
+    "aliases": [
+      "lunges walking",
+      "walking lunges",
+      "walking-lunge"
+    ]
+  },
+  {
+    "name": "Wall Walk",
+    "kind": "freeweight",
+    "aliases": [
+      "wall walks",
+      "wall-walk"
+    ]
+  },
+  {
+    "name": "Weighted Plank",
+    "kind": "bodyweight",
+    "aliases": [
+      "weighted planks",
+      "weighted-plank"
+    ]
+  },
+  {
+    "name": "Wide-Grip Pulldown",
+    "kind": "machine",
+    "aliases": [
+      "wide grip pull-down",
+      "wide grip pulldown",
+      "wide grip pulldowns",
+      "wide pulldown",
+      "wide-grip pulldowns",
+      "wide-grip-pulldown",
+      "widegrip pulldown"
+    ]
+  },
+  {
+    "name": "Woodchop",
+    "kind": "machine",
+    "aliases": [
+      "cable chop",
+      "cable woodchop",
+      "wood chop",
+      "woodchops"
+    ]
+  },
+  {
+    "name": "Wrist Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "wrist carl",
+      "wrist cull",
+      "wrist curls",
+      "wrist girl",
+      "wrist pearl",
+      "wrist-curl"
+    ]
+  },
+  {
+    "name": "Wrist Roller",
+    "kind": "freeweight",
+    "aliases": [
+      "wrist rollers",
+      "wrist-roller"
+    ]
+  },
+  {
+    "name": "Y Raise",
+    "kind": "freeweight",
+    "aliases": [
+      "y race",
+      "y raises",
+      "y rays",
+      "y raze",
+      "y-raise"
+    ]
+  },
+  {
+    "name": "Z Press",
+    "kind": "freeweight",
+    "aliases": [
+      "z breast",
+      "z pressed",
+      "z presses",
+      "z prest",
+      "z-press"
+    ]
+  },
+  {
+    "name": "Zercher Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "zercher scott",
+      "zercher squad",
+      "zercher squats",
+      "zercher-squat"
+    ]
+  },
+  {
+    "name": "Zombie Squat",
+    "kind": "freeweight",
+    "aliases": [
+      "zombie scott",
+      "zombie squad",
+      "zombie squats",
+      "zombie-squat"
+    ]
+  },
+  {
+    "name": "Zottman Curl",
+    "kind": "freeweight",
+    "aliases": [
+      "zottman carl",
+      "zottman cull",
+      "zottman curls",
+      "zottman girl",
+      "zottman pearl",
+      "zottman-curl",
+      "zottmans"
+    ]
+  }
+]
+
+export const STARTER_EQUIPMENT_NAMES: string[] = EXERCISE_CATALOG.map((e) => e.name)

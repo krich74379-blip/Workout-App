@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4659134E8663473287C64825 /* LogWorkoutSetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD9BAC21C614524B45AAF9A /* LogWorkoutSetIntent.swift */; };
+		E151CB8B59EA4E408EBF4CC9 /* SharedModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAA2802AFC4EFB8DD91E76 /* SharedModelContainer.swift */; };
+		E8ADF54BCED249B9A45BDB4D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21894CE306AE434696D5E0E4 /* Models.swift */; };
+		DCAAA9CA218242ABA26CDCF5 /* PreferredUnitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ABD4DFEACE48A7854B4C0F /* PreferredUnitStore.swift */; };
+		805285CD2A754DA0AFB75036 /* SetUtteranceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E370411C3F744896B5F454B9 /* SetUtteranceParser.swift */; };
+		7443B148884A4E09988107C3 /* WorkoutStoreHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7027C9E1618A463DA1A0DF90 /* WorkoutStoreHelpers.swift */; };
+		4A7E515BEA214EBDA4D33DCE /* EditSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE38553039D349C8B026AADB /* EditSetView.swift */; };
+		8F77EF6303D841BBB9243328 /* EquipmentLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5C67981F3C4341A6306A84 /* EquipmentLibraryView.swift */; };
+		CC52FA414F5F4F0F946000D1 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5133B5491C4A4D51B7520A7C /* HistoryView.swift */; };
+		EBEFFEC3858C40E68C6EDB62 /* LogSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4393798F044CC09F2E0024 /* LogSetView.swift */; };
+		C9467A691C124DD99FD346DC /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E1609C38EF4F8EA78A5DC8 /* RootTabView.swift */; };
+		CB0E962534D94442966FA554 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85C728157D448CDA87E2C93 /* SettingsView.swift */; };
+		B892F898FD5944B6AA7F3141 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF423B69110440CBD2556A1 /* TodayView.swift */; };
+		952DB167EE36455188A17375 /* WorkoutLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EE3F297A514C44B45349B5 /* WorkoutLogApp.swift */; };
+		A04E65A9F3C648CC913029D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E788332901FD4070ACD78774 /* Assets.xcassets */; };
+		B1B2C3D4E5F64701A1B2C3D1 /* DualSpeechScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F64701A1B2C3D1 /* DualSpeechScorer.swift */; };
+		B1B2C3D4E5F64701A1B2C3D2 /* GymTranscriptCleanup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F64701A1B2C3D2 /* GymTranscriptCleanup.swift */; };
+		B1B2C3D4E5F64701A1B2C3D3 /* WavEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F64701A1B2C3D3 /* WavEncoder.swift */; };
+		B1B2C3D4E5F64701A1B2C3D4 /* WhisperAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F64701A1B2C3D4 /* WhisperAPIClient.swift */; };
+		B1B2C3D4E5F64701A1B2C3D5 /* WhisperServerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F64701A1B2C3D5 /* WhisperServerStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA5BA370CFA8488E847D9111 /* WorkoutLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DD9BAC21C614524B45AAF9A /* LogWorkoutSetIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogWorkoutSetIntent.swift; sourceTree = "<group>"; };
+		2FAAA2802AFC4EFB8DD91E76 /* SharedModelContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModelContainer.swift; sourceTree = "<group>"; };
+		21894CE306AE434696D5E0E4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		91ABD4DFEACE48A7854B4C0F /* PreferredUnitStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredUnitStore.swift; sourceTree = "<group>"; };
+		E370411C3F744896B5F454B9 /* SetUtteranceParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUtteranceParser.swift; sourceTree = "<group>"; };
+		7027C9E1618A463DA1A0DF90 /* WorkoutStoreHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutStoreHelpers.swift; sourceTree = "<group>"; };
+		AE38553039D349C8B026AADB /* EditSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSetView.swift; sourceTree = "<group>"; };
+		2C5C67981F3C4341A6306A84 /* EquipmentLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLibraryView.swift; sourceTree = "<group>"; };
+		5133B5491C4A4D51B7520A7C /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		7F4393798F044CC09F2E0024 /* LogSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSetView.swift; sourceTree = "<group>"; };
+		A6E1609C38EF4F8EA78A5DC8 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		A85C728157D448CDA87E2C93 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8AF423B69110440CBD2556A1 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		A5EE3F297A514C44B45349B5 /* WorkoutLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogApp.swift; sourceTree = "<group>"; };
+		E788332901FD4070ACD78774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4A4929AC7494CD187047B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA229A0DADC40AAB8B64632 /* WorkoutLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorkoutLog.entitlements; sourceTree = "<group>"; };
+		A1B2C3D4E5F64701A1B2C3D1 /* DualSpeechScorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSpeechScorer.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F64701A1B2C3D2 /* GymTranscriptCleanup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymTranscriptCleanup.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F64701A1B2C3D3 /* WavEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavEncoder.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F64701A1B2C3D4 /* WhisperAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperAPIClient.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F64701A1B2C3D5 /* WhisperServerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperServerStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96F030C872564D55BA2D71C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2714B72CF614C66B7DA2FBA = {
+			isa = PBXGroup;
+			children = (
+				5A8FCDC2B62244148E6D25B3 /* WorkoutLog */,
+				D32DA07EE10E49EEA20F29A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D32DA07EE10E49EEA20F29A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA5BA370CFA8488E847D9111 /* WorkoutLog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A8FCDC2B62244148E6D25B3 /* WorkoutLog */ = {
+			isa = PBXGroup;
+			children = (
+				A5EE3F297A514C44B45349B5 /* WorkoutLogApp.swift */,
+				C99681C80110470ABE92D2CE /* Models */,
+				EFDBC5F9B40244648C5A5D70 /* Views */,
+				C9AD26F2676D4A148F12FAA4 /* Services */,
+				75DC2A9D516D44CE9DB7B3EE /* Intents */,
+				E788332901FD4070ACD78774 /* Assets.xcassets */,
+				D4A4929AC7494CD187047B05 /* Info.plist */,
+				EAA229A0DADC40AAB8B64632 /* WorkoutLog.entitlements */,
+			);
+			path = WorkoutLog;
+			sourceTree = "<group>";
+		};
+		C99681C80110470ABE92D2CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				21894CE306AE434696D5E0E4 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFDBC5F9B40244648C5A5D70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE38553039D349C8B026AADB /* EditSetView.swift */,
+				2C5C67981F3C4341A6306A84 /* EquipmentLibraryView.swift */,
+				5133B5491C4A4D51B7520A7C /* HistoryView.swift */,
+				7F4393798F044CC09F2E0024 /* LogSetView.swift */,
+				A6E1609C38EF4F8EA78A5DC8 /* RootTabView.swift */,
+				A85C728157D448CDA87E2C93 /* SettingsView.swift */,
+				8AF423B69110440CBD2556A1 /* TodayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9AD26F2676D4A148F12FAA4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F64701A1B2C3D1 /* DualSpeechScorer.swift */,
+				A1B2C3D4E5F64701A1B2C3D2 /* GymTranscriptCleanup.swift */,
+				91ABD4DFEACE48A7854B4C0F /* PreferredUnitStore.swift */,
+				E370411C3F744896B5F454B9 /* SetUtteranceParser.swift */,
+				A1B2C3D4E5F64701A1B2C3D3 /* WavEncoder.swift */,
+				A1B2C3D4E5F64701A1B2C3D4 /* WhisperAPIClient.swift */,
+				A1B2C3D4E5F64701A1B2C3D5 /* WhisperServerStore.swift */,
+				7027C9E1618A463DA1A0DF90 /* WorkoutStoreHelpers.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		75DC2A9D516D44CE9DB7B3EE /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				9DD9BAC21C614524B45AAF9A /* LogWorkoutSetIntent.swift */,
+				2FAAA2802AFC4EFB8DD91E76 /* SharedModelContainer.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82E1ACB8A5324EF9B5CD812A /* WorkoutLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A685FB521E3C4293915FE5FC /* Build configuration list for PBXNativeTarget "WorkoutLog" */;
+			buildPhases = (
+				D69FC13968044D9191FF1633 /* Sources */,
+				96F030C872564D55BA2D71C3 /* Frameworks */,
+				C88365088ABD4532B870339F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorkoutLog;
+			productName = WorkoutLog;
+			productReference = EA5BA370CFA8488E847D9111 /* WorkoutLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D46546173554589B61E376C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					82E1ACB8A5324EF9B5CD812A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F98B3D9CBF1341568FCDDE12 /* Build configuration list for PBXProject "WorkoutLog" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2714B72CF614C66B7DA2FBA;
+			productRefGroup = D32DA07EE10E49EEA20F29A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82E1ACB8A5324EF9B5CD812A /* WorkoutLog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C88365088ABD4532B870339F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04E65A9F3C648CC913029D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D69FC13968044D9191FF1633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4659134E8663473287C64825 /* LogWorkoutSetIntent.swift in Sources */,
+				E151CB8B59EA4E408EBF4CC9 /* SharedModelContainer.swift in Sources */,
+				E8ADF54BCED249B9A45BDB4D /* Models.swift in Sources */,
+				B1B2C3D4E5F64701A1B2C3D1 /* DualSpeechScorer.swift in Sources */,
+				B1B2C3D4E5F64701A1B2C3D2 /* GymTranscriptCleanup.swift in Sources */,
+				B1B2C3D4E5F64701A1B2C3D3 /* WavEncoder.swift in Sources */,
+				B1B2C3D4E5F64701A1B2C3D4 /* WhisperAPIClient.swift in Sources */,
+				B1B2C3D4E5F64701A1B2C3D5 /* WhisperServerStore.swift in Sources */,
+				DCAAA9CA218242ABA26CDCF5 /* PreferredUnitStore.swift in Sources */,
+				805285CD2A754DA0AFB75036 /* SetUtteranceParser.swift in Sources */,
+				7443B148884A4E09988107C3 /* WorkoutStoreHelpers.swift in Sources */,
+				4A7E515BEA214EBDA4D33DCE /* EditSetView.swift in Sources */,
+				8F77EF6303D841BBB9243328 /* EquipmentLibraryView.swift in Sources */,
+				CC52FA414F5F4F0F946000D1 /* HistoryView.swift in Sources */,
+				EBEFFEC3858C40E68C6EDB62 /* LogSetView.swift in Sources */,
+				C9467A691C124DD99FD346DC /* RootTabView.swift in Sources */,
+				CB0E962534D94442966FA554 /* SettingsView.swift in Sources */,
+				B892F898FD5944B6AA7F3141 /* TodayView.swift in Sources */,
+				952DB167EE36455188A17375 /* WorkoutLogApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84F613D533F84DED91BC3F83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WorkoutLog/WorkoutLog.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WorkoutLog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Workout Log";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenneth.workoutlog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB604C337E9E4C62B476F223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WorkoutLog/WorkoutLog.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WorkoutLog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Workout Log";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenneth.workoutlog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39116722E88A489B9B1E0730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72547AD352784E5BB342BAF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F98B3D9CBF1341568FCDDE12 /* Build configuration list for PBXProject "WorkoutLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39116722E88A489B9B1E0730 /* Debug */,
+				72547AD352784E5BB342BAF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A685FB521E3C4293915FE5FC /* Build configuration list for PBXNativeTarget "WorkoutLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F613D533F84DED91BC3F83 /* Debug */,
+				FB604C337E9E4C62B476F223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D46546173554589B61E376C /* Project object */;
+}
