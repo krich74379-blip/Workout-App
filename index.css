@@ -544,6 +544,34 @@ ul {
   border-color: var(--accent);
 }
 
+.records-card {
+  margin-bottom: 16px;
+}
+
+.records-card h2 {
+  margin: 0 0 4px;
+}
+
+.records-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.records-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.records-list li:last-child {
+  border-bottom: none;
+}
+
 .history-meta {
   display: flex;
   flex-direction: column;
@@ -577,7 +605,7 @@ ul {
   height: calc(var(--nav-h) + var(--safe-b));
   padding: 8px calc(8px + var(--safe-r)) calc(8px + var(--safe-b)) calc(8px + var(--safe-l));
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 4px;
   background: rgba(12, 17, 24, 0.94);
   border-top: 1px solid var(--border);
@@ -961,4 +989,421 @@ ul {
 }
 .voice-guided .chip-row {
   margin-top: 8px;
+}
+
+/* ---- Month calendar ---- */
+.calendar-card {
+  padding: 12px;
+}
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.calendar-header h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+.calendar-weekday {
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--muted, #8a93a6);
+  padding: 4px 0;
+}
+.calendar-pad {
+  aspect-ratio: 1;
+}
+.calendar-day {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar-day:active {
+  background: rgba(255, 255, 255, 0.06);
+}
+.calendar-day.is-today .calendar-num {
+  font-weight: 700;
+  color: #3ddc97;
+}
+.calendar-day.is-selected {
+  background: rgba(61, 220, 151, 0.16);
+  border-color: rgba(61, 220, 151, 0.55);
+}
+.calendar-day.has-sets .calendar-dot {
+  position: absolute;
+  bottom: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #3ddc97;
+}
+.calendar-today-btn {
+  margin-top: 8px;
+  width: 100%;
+}
+/* ---- Log date banner ---- */
+.log-date-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(61, 220, 151, 0.1);
+  border: 1px solid rgba(61, 220, 151, 0.35);
+  font-size: 0.9rem;
+}
+
+/* Muscle-group sections + spelling helpers (Gear tab) */
+.equip-group {
+  margin-top: 18px;
+}
+
+.equip-group-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+  margin: 0 0 4px;
+}
+
+.equip-group-count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted, #8a8f98);
+  background: rgba(127, 127, 140, 0.15);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
+
+.equip-group-picker .input-sm {
+  max-width: 110px;
+}
+
+.input-sm {
+  padding: 6px 8px;
+  font-size: 0.85rem;
+}
+
+.equip-actions {
+  align-items: center;
+}
+
+.spell-hint {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  color: var(--muted, #8a8f98);
+}
+
+.spell-hint strong {
+  color: inherit;
+}
+
+.spell-flag {
+  margin-bottom: 8px;
+}
+
+.spell-flag-btn {
+  color: #d9a441;
+}
+
+.spell-flag-open {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(217, 164, 65, 0.1);
+  border: 1px solid rgba(217, 164, 65, 0.35);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Gear toolbar: filter + sort segmented control */
+.gear-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-end;
+  margin-top: 14px;
+}
+
+.seg {
+  display: inline-flex;
+  background: rgba(127, 127, 140, 0.15);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.seg-btn {
+  border: 0;
+  background: transparent;
+  color: var(--muted, #8a8f98);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.seg-btn.seg-active {
+  background: var(--accent, #3ddc97);
+  color: #0b0f14;
+}
+
+/* Collapsible group headers */
+.equip-group-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 4px 0;
+  cursor: pointer;
+  color: inherit;
+  text-align: left;
+}
+
+.equip-group-caret {
+  color: var(--muted, #8a8f98);
+  font-size: 0.85rem;
+  width: 14px;
+}
+
+/* Favorite star + usage line on gear cards */
+.equip-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.equip-name-row .equip-name {
+  margin-bottom: 0;
+}
+
+.star-btn {
+  border: 0;
+  background: transparent;
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 2px 4px;
+  cursor: pointer;
+  color: var(--muted, #8a8f98);
+}
+
+.star-btn.star-on {
+  color: #f2c14e;
+}
+
+.equip-usage {
+  font-size: 0.8rem;
+  margin: 2px 0 8px 34px;
+}
+
+/* Search tab */
+.search-section {
+  margin-top: 18px;
+}
+
+.search-section-title {
+  font-size: 1.05rem;
+  margin: 0 0 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.search-card {
+  padding: 12px 14px;
+}
+
+.search-row-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  text-align: left;
+}
+
+.search-name {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.search-meta {
+  font-size: 0.82rem;
+  flex: 1;
+}
+
+.search-caret {
+  color: var(--muted, #8a8f98);
+}
+
+.search-detail {
+  margin-top: 10px;
+  border-top: 1px solid var(--border, #232a35);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-sets {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.search-gear-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.search-gear-row .equip-name {
+  margin-bottom: 2px;
+}
+
+/* Achievements + rewards */
+.achievements-card {
+  margin-top: 16px;
+}
+
+.level-banner {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: rgba(127, 127, 140, 0.12);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin: 12px 0 8px;
+}
+
+.level-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.level-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.level-xp {
+  font-size: 0.82rem;
+}
+
+.progress-track {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(127, 127, 140, 0.25);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #3ddc97, #2bb673);
+  transition: width 0.3s ease;
+}
+
+.ach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.ach-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  padding: 12px 10px;
+  border-radius: 14px;
+  background: rgba(127, 127, 140, 0.1);
+  border: 1px solid transparent;
+  opacity: 0.62;
+}
+
+.ach-badge.ach-unlocked {
+  opacity: 1;
+  background: rgba(61, 220, 151, 0.1);
+  border-color: rgba(61, 220, 151, 0.35);
+}
+
+.ach-icon {
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.ach-name {
+  font-size: 0.9rem;
+}
+
+.ach-desc {
+  font-size: 0.76rem;
+  line-height: 1.35;
+}
+
+.ach-earned {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #3ddc97;
+}
+
+.ach-progress {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.ach-track {
+  width: 100%;
+  margin-top: 2px;
 }

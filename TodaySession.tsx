@@ -2,7 +2,7 @@ import type { FormEvent } from 'react'
 import { useState } from 'react'
 import type { WorkoutStore } from '../hooks/useWorkoutStore'
 import type { SetEntry, WeightUnit } from '../types'
-import { entrySetCount, formatSetLoad, formatTime, plural } from '../utils'
+import { entrySetCount, formatDisplayDate, formatSetLoad, formatTime, plural, todayKey } from '../utils'
 import { EmptyState } from './EmptyState'
 
 type Props = {
@@ -15,6 +15,7 @@ export function TodaySession({ store, onGoLog, onGoVoice }: Props) {
   const sets = store.todaySets
   const unique = new Set(sets.map((s) => s.equipmentId)).size
   const [editing, setEditing] = useState<SetEntry | null>(null)
+  const [copied, setCopied] = useState(false)
 
   const grouped = sets.reduce<Record<string, SetEntry[]>>((acc, s) => {
     const key = s.equipmentId
@@ -23,6 +24,42 @@ export function TodaySession({ store, onGoLog, onGoVoice }: Props) {
   }, {})
 
   const order = Object.keys(grouped)
+
+  /** Total weight lifted today, in the preferred unit. */
+  const volume = sets.reduce((n, s) => {
+    if (s.kind === 'cardio') return n
+    const lb = s.unit === 'kg' ? s.weight * 2.20462 : s.weight
+    return n + lb * s.reps * entrySetCount(s)
+  }, 0)
+  const displayVolume =
+    store.preferredUnit === 'kg' ? volume / 2.20462 : volume
+  const volumeLabel = `${Math.round(displayVolume).toLocaleString()} ${store.preferredUnit} lifted`
+
+  function copySummary() {
+    const lines = [
+      `Workout — ${formatDisplayDate(todayKey())}`,
+      ...order.map((eqId) => {
+        const list = grouped[eqId]
+        const setsText = list.map((s) => formatSetLoad(s)).join(', ')
+        const count = list.reduce((n, s) => n + entrySetCount(s), 0)
+        return `${list[0].equipmentName}: ${setsText} (${plural(count, 'set')})`
+      }),
+      `Total: ${plural(
+        sets.reduce((n, s) => n + entrySetCount(s), 0),
+        'set',
+      )} · ${volumeLabel}`,
+    ]
+    const text = lines.join('\n')
+    const done = () => {
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 1600)
+    }
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(text).then(done, done)
+    } else {
+      done()
+    }
+  }
 
   return (
     <div className="panel">
@@ -34,7 +71,8 @@ export function TodaySession({ store, onGoLog, onGoVoice }: Props) {
               sets.reduce((n, s) => n + entrySetCount(s), 0),
               'set',
             )}{' '}
-            · {plural(unique, 'equipment piece', 'equipment pieces')}
+            · {plural(unique, 'equipment piece', 'equipment pieces')} ·{' '}
+            {volumeLabel}
           </p>
         ) : (
           <p className="muted">Your session for today.</p>
@@ -48,6 +86,11 @@ export function TodaySession({ store, onGoLog, onGoVoice }: Props) {
         <button type="button" className="btn btn-ghost" onClick={onGoLog}>
           Manual log
         </button>
+        {sets.length > 0 ? (
+          <button type="button" className="btn btn-ghost" onClick={copySummary}>
+            {copied ? 'Copied ✓' : 'Copy summary'}
+          </button>
+        ) : null}
       </div>
 
       {sets.length === 0 ? (
@@ -67,11 +110,45 @@ export function TodaySession({ store, onGoLog, onGoVoice }: Props) {
               <section key={eqId} className="card">
                 <div className="card-title-row">
                   <h2>{name}</h2>
-                  <span className="badge">
-                    {plural(
-                      list.reduce((n, s) => n + entrySetCount(s), 0),
-                      'set',
-                    )}
+                  <span className="row-actions">
+                    <span className="badge">
+                      {plural(
+                        list.reduce((n, s) => n + entrySetCount(s), 0),
+                        'set',
+                      )}
+                    </span>
+                    <button
+                      type="button"
+                      className="btn btn-ghost btn-sm"
+                      onClick={() => {
+                        const last = list[list.length - 1]
+                        try {
+                          store.logSet(
+                            last.kind === 'cardio'
+                              ? {
+                                  equipmentName: last.equipmentName,
+                                  kind: 'cardio',
+                                  miles: last.miles,
+                                  flights: last.flights,
+                                  calories: last.calories,
+                                  minutes: last.minutes,
+                                  unit: last.unit,
+                                }
+                              : {
+                                  equipmentName: last.equipmentName,
+                                  weight: last.weight,
+                                  unit: last.unit,
+                                  reps: last.reps,
+                                  setCount: 1,
+                                },
+                          )
+                        } catch {
+                          /* validation errors surface on the Log tab */
+                        }
+                      }}
+                    >
+                      ＋ Same set
+                    </button>
                   </span>
                 </div>
                 <ul className="set-list">

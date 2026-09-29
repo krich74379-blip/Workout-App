@@ -365,8 +365,15 @@ export function useWorkoutStore() {
       .sort((a, b) => a.loggedAt.localeCompare(b.loggedAt))
   }, [data.sets])
 
-  const historyByDay = useMemo((): DaySummary[] => {
-    const map = new Map<string, SetEntry[]>()
+  /** Single most recently logged set across all days (for "repeat last set"). */
+  const mostRecentSet = useMemo(() => {
+    if (data.sets.length === 0) return null
+    return [...data.sets].sort((a, b) =>
+      b.loggedAt.localeCompare(a.loggedAt),
+    )[0]
+  }, [data.sets])
+
+  const historyByDay = useMemo((): DaySummary[] => {    const map = new Map<string, SetEntry[]>()
     for (const s of data.sets) {
       const list = map.get(s.date) ?? []
       list.push(s)
@@ -464,7 +471,7 @@ export function useWorkoutStore() {
         quickVoiceLog: data.settings.quickVoiceLog,
       },
     })
-  }, [data.settings.preferredUnit])
+  }, [data.settings.preferredUnit, data.settings.quickVoiceLog])
 
   return {
     data,
@@ -482,6 +489,7 @@ export function useWorkoutStore() {
     deleteSet,
     todaySets,
     historyByDay,
+    mostRecentSet,
     lastSetForEquipment,
     progressForEquipment,
     exportData,

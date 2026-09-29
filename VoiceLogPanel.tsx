@@ -8,16 +8,18 @@ import {
   speakQuiet,
 } from '../lib/speech'
 import {
+  getTranscribeKey,
   isMicPermissionGranted,
   isMicSupported,
   isMediaRecorderSupported,
   primeCaptureAudioContext,
   queryMicPermission,
+  setTranscribeKey,
   startMediaCapture,
   transcribeAudioBlobDetailed,
 } from '../lib/whisperAsr'
-import type { WeightUnit } from '../types'
-import { isCardioEquipmentName } from '../utils'
+import type { WeightUnit, SetEntry } from '../types'
+import { isCardioEquipmentName, entryKind } from '../utils'
 
 type Props = {
   store: WorkoutStore
@@ -130,6 +132,36 @@ function emptyConfirm(transcript: string, unit: WeightUnit): ConfirmState {
   }
 }
 
+/** "again", "same", "one more" → repeat the most recent set. */
+function isRepeatUtterance(text: string): boolean {
+  return /^(same|again|one more|another|repeat|same again|do it again|same as last( one| time)?|log (it |that )?again)[\s.!]*$/i.test(
+    text.trim(),
+  )
+}
+
+/** Prefill the confirm card from an existing set (for "repeat last set"). */
+function confirmFromSetEntry(entry: SetEntry, transcript: string): ConfirmState {
+  const cardio = entryKind(entry) === 'cardio'
+  const asFlights = cardio && (entry.flights ?? 0) > 0
+  return {
+    equipmentName: entry.equipmentName,
+    weight: !cardio && entry.weight > 0 ? String(entry.weight) : '',
+    reps: !cardio && entry.reps > 0 ? String(entry.reps) : '',
+    setCount: '1',
+    miles:
+      cardio && !asFlights && (entry.miles ?? 0) > 0 ? String(entry.miles) : '',
+    flights: asFlights ? String(entry.flights) : '',
+    distanceAsFlights: asFlights,
+    calories:
+      cardio && (entry.calories ?? 0) > 0 ? String(entry.calories) : '',
+    minutes: cardio && (entry.minutes ?? 0) > 0 ? String(entry.minutes) : '',
+    cardio,
+    unit: entry.unit,
+    transcript,
+    confidence: 1,
+  }
+}
+
 type MicPhase = 'idle' | 'listening' | 'transcribing'
 
 type CaptureHandle = {
@@ -154,7 +186,7 @@ export function VoiceLogPanel({
   onLogged,
   emphasize,
   deepLinkUtterance = null,
-  deepLinkAutolog = true,
+  deepLinkAutolog = false,
   onDeepLinkConsumed,
 }: Props) {
   const [phase, setPhaseState] = useState<MicPhase>('idle')
@@ -168,6 +200,8 @@ export function VoiceLogPanel({
   /** Last capture debug (blob size / mime / peak) for on-device reports. */
   const [micDebug, setMicDebug] = useState<string | null>(null)
   const [showType, setShowType] = useState(false)
+  /** Optional shared secret when the transcription server requires one. */
+  const [serverKey, setServerKey] = useState(() => getTranscribeKey())
   // Guided mode UI removed — always freeform (full utterance). Parser still
   // supports lockedEquipment if ever re-enabled; keep helpers for that.
   const [voiceMode, setVoiceMode] = useState<VoiceLogMode>('freeform')
@@ -323,6 +357,19 @@ export function VoiceLogPanel({
       const trimmed = cleaned.trim()
       setTranscript(trimmed)
 
+      // "again" / "same" → prefill from the most recent set
+      if (isRepeatUtterance(trimmed)) {
+        const last = store.mostRecentSet
+        if (last) {
+          setConfirm(confirmFromSetEntry(last, trimmed))
+          setError(null)
+          setStatusNote(`Repeating last set: ${last.equipmentName}`)
+          setShowType(true)
+          return
+        }
+        // No history yet → fall through to normal parsing
+      }
+
       const parsed = parseSetUtterance(trimmed, buildParseOpts())
 
       if (!parsed) {
@@ -445,6 +492,53 @@ export function VoiceLogPanel({
       const heard = cleaned.trim()
       setTranscript(heard)
       setShowType(true)
+
+      // "again" via Siri → repeat the most recent set
+      if (isRepeatUtterance(heard)) {
+        const last = store.mostRecentSet
+        if (last) {
+          const cardio = entryKind(last) === 'cardio'
+          if (autolog) {
+            try {
+              store.logSet(
+                cardio
+                  ? {
+                      equipmentName: last.equipmentName,
+                      kind: 'cardio',
+                      miles: last.miles,
+                      flights: last.flights,
+                      calories: last.calories,
+                      minutes: last.minutes,
+                      unit: last.unit,
+                      notes: `Siri: ${heard}`,
+                    }
+                  : {
+                      equipmentName: last.equipmentName,
+                      weight: last.weight,
+                      unit: last.unit,
+                      reps: last.reps,
+                      setCount: 1,
+                      notes: `Siri: ${heard}`,
+                    },
+              )
+              setConfirm(null)
+              setFlash('Logged via Siri')
+              speakQuiet('Logged')
+              window.setTimeout(() => setFlash(null), 1800)
+              onLogged?.()
+            } catch (err) {
+              setConfirm(confirmFromSetEntry(last, heard))
+              setError(err instanceof Error ? err.message : 'Could not log set')
+            }
+          } else {
+            setConfirm(confirmFromSetEntry(last, heard))
+            setStatusNote(`Repeating last set: ${last.equipmentName}`)
+          }
+          onDeepLinkConsumed?.()
+          return
+        }
+        // No history yet → fall through to normal parsing
+      }
 
       const parsed = parseSetUtterance(heard, {
         equipmentNames,
@@ -830,10 +924,9 @@ export function VoiceLogPanel({
         <div>
           <h2>Voice log</h2>
           <p className="muted">
-            Tap the mic and say the full set (equipment + numbers), e.g. “calf press 90 for 15
-            for 3 sets” or “stair climber 10 flights 200 calories 35 minutes”.
-            {' '}
-            Uses MediaRecorder → Whisper. Watch the level meter, speak the full set for 3+ seconds, then tap stop.
+            Tap the mic and say the full set, e.g. “calf press 90 for 15 for 3
+            sets”. Say “again” to repeat your last set. Speak 3+ seconds, then
+            tap stop.
           </p>
         </div>
         <label className="voice-quick">
@@ -891,6 +984,24 @@ export function VoiceLogPanel({
             Mic debug: {micDebug}
           </p>
         ) : null}
+        <details className="muted voice-server-key">
+          <summary>Server key</summary>
+          <label className="field">
+            <span>Transcription key (only if your server sets one)</span>
+            <input
+              type="password"
+              className="input"
+              value={serverKey}
+              autoComplete="off"
+              onChange={(e) => {
+                const v = e.target.value
+                setServerKey(v)
+                setTranscribeKey(v.trim())
+              }}
+              placeholder="Leave empty unless configured"
+            />
+          </label>
+        </details>
       </div>
 
       {error ? <p className="form-error">{error}</p> : null}
