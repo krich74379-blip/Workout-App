@@ -1,107 +1,191 @@
-# Workout Log (iOS)
+# Workout Log
 
-Native SwiftUI workout logger for Kenneth with **SwiftData** persistence and **Siri / App Intents**.
+A personal, mobile-friendly **Progressive Web App** workout logger. Record which equipment you used, how much weight you lifted, and how many reps — with multiple sets per day and a browsable history. Everything stays in your browser (no backend). Install it to your iPhone Home Screen for a standalone, offline-capable experience.
 
-Bundle ID: `com.kenneth.workoutlog` · Deployment: **iOS 17+**
-
-This project is separate from the web PWA at `/workspace/workout-log`.
-
-## Open in Xcode (Mac)
-
-1. Copy or clone this folder to a Mac.
-2. Double-click **`WorkoutLog.xcodeproj`** (or open it from Xcode → File → Open).
-3. Select the **WorkoutLog** target.
-4. **Signing & Capabilities**
-   - Team: choose **Kenneth’s Apple Developer team**
-   - Confirm bundle id `com.kenneth.workoutlog`
-   - Capability **Siri** should already be enabled via `WorkoutLog.entitlements`
-5. Choose an **iPhone Simulator** or a physical device.
-6. Press **Run** (⌘R).
-
-### If the project fails to open
-Use [XcodeGen](https://github.com/yonaskolb/XcodeGen):
+## Quick start
 
 ```bash
-brew install xcodegen
-cd WorkoutLogIOS
-xcodegen generate
-open WorkoutLog.xcodeproj
+npm install
+npm run dev
 ```
 
-(`project.yml` is included as a regeneratable source of truth.)
+Open the URL Vite prints (default [http://localhost:5173](http://localhost:5173)).
+
+### Other scripts
+
+```bash
+npm run icons        # regenerate public/*.png app icons (requires sharp)
+npm run build        # typecheck + production build (includes service worker + manifest)
+npm run preview      # serve the production build locally
+npm run preview:pwa  # serve build on 0.0.0.0:5173 (good for phone testing)
+```
+
+To expose the **dev** server on your network:
+
+```bash
+npm run dev -- --host 0.0.0.0 --port 5173
+```
+
+> **Note:** iOS “Add to Home Screen” and reliable offline caching work best against an **HTTPS** origin (or `localhost`). Use a tunnel (e.g. Cloudflare Tunnel, ngrok) or host the `dist/` folder on HTTPS when installing from a phone.
+
+## Install on iPhone (Add to Home Screen)
+
+Works with Safari on iOS (including recent iOS releases such as iOS 27):
+
+1. Open the app’s **HTTPS** URL in **Safari** (not Chrome or in-app browsers).
+2. Tap the **Share** button (square with an upward arrow).
+3. Scroll and tap **Add to Home Screen**.
+4. Confirm the name (**Workout Log**) and tap **Add**.
+5. Open the new Home Screen icon — it launches **standalone** (no Safari chrome), with offline shell caching via the service worker.
+
+After the first successful visit online, the app shell is cached so it can open from the Home Screen even without a network connection. Your sets still live in this device’s `localStorage`.
+
+
+## Voice logging
+
+### Guided (default)
+
+1. Pick **equipment** first (recent chips or search).
+2. Tap **mic** and say **numbers only**:
+   - Strength → weight / reps / sets (e.g. `90 for 15 for 3 sets`)
+   - Cardio → miles|flights, calories, minutes (e.g. `10 flights 200 calories 35 minutes`)
+3. Tap mic again → confirm → save.
+
+The selected equipment is **locked** for parsing, so Whisper inventing a wrong machine name is ignored.
+
+**Freeform** (optional advanced tab): say the full utterance including equipment name.
+
+### Engines
+
+**Safari / Home Screen PWA:** Whisper only (`getUserMedia` → PCM → `POST /api/transcribe`, `whisper-medium.en`). Web Speech / Apple SpeechRecognition is **disabled** in the web app. Status shows “Listening…” / “Used Whisper”. Native iOS app may still use SFSpeech separately.
+
+**iPhone tip:** Apple / Web Speech **cannot run in the Home Screen PWA** (WebKit). Whisper is the default there — the app shows a clear banner. For Apple speech, open the same HTTPS URL in a **Safari tab**, or use the native **WorkoutLogIOS** app. The on-screen **Apple diag** line shows `mode`, `started`, and `err`.
+
+### How to log (Safari tab)
+
+1. Open the **HTTPS tunnel URL in Safari** (not Chrome). Allow Microphone.
+2. Open **Log** → leave mode on **Guided** → pick e.g. Stair Step Machine.
+3. Tap mic → say `10 flights 200 calories 35 minutes` → tap again.
+4. Status shows which engine won → confirm → **Save**.
+
+Optional: **Quick voice log** auto-saves high-confidence parses. **Type instead** is secondary.
+
+### Example phrases
+
+- `bench press 185 for 8`
+- `squat 225 pounds 5 reps`
+- `leg press one thirty five by ten`
+- `dumbbell curl 30 lbs times 12`
+- `cable row 120 pounds 10 reps`
+
+### Notes
+
+- Needs **HTTPS** (or localhost) for microphone access.
+- Mic capture starts **immediately** on tap (Web Audio PCM). Transcription runs on the server (first request may wait while the model loads).
+- While listening, a volume bar shows the mic is live.
+- If mic permission is denied, allow access for this site and tap the mic again.
+- Quiet “Logged” feedback uses `speechSynthesis` only (no `HTMLAudioElement`).
+
+### Run (static + ASR server)
+
+```bash
+npm run build
+npm start          # or: npm run preview:pwa
+# listens on 0.0.0.0:5173 — serves dist/ + /api/transcribe
+```
+
+```bash
+npm run test:parse
+```
+
+
+
+
+## Siri Shortcut (deep-link logging)
+
+iOS PWAs cannot register with Siri. Instead, create a **Shortcut** that dictates your set and opens Workout Log with a query string. The app parses the utterance and writes into **this phone’s** `localStorage` (no server storage).
+
+### URL pattern
+
+```
+https://YOUR_ORIGIN/?log=YOUR%20UTTERANCE
+```
+
+- Prefer `log=` (also accepts `voice=`).
+- Optional `autolog=0` to always show the confirm card (default is auto-log when the parse is strong).
+- Example: `https://YOUR_ORIGIN/?log=bench%20press%20185%20for%208`
+
+While using Cloudflare Tunnel, `YOUR_ORIGIN` is the `https://….trycloudflare.com` URL (same origin as the Home Screen PWA).
+
+### Create the Shortcut (step-by-step)
+
+1. Open the **Shortcuts** app → tap **+** (New Shortcut).
+2. Add action **Dictate Text** (or **Ask for Input** → Text).
+3. Add action **Open URLs**.
+4. Set the URL to: your origin + `/?log=` + the **Dictated Text** variable.
+   - Tip: type `https://YOUR_ORIGIN/?log=` then tap the variable chip for Dictated Text so Shortcuts URL-encodes spaces.
+5. Tap the shortcut name / info (**ⓘ**) → **Add to Siri** → record a phrase like **“Log my set”**.
+6. Say the phrase to Siri → speak e.g. “bench press 185 for 8” → Safari/PWA opens → set is logged (or confirm card if the parse is weak).
+
+In-app: **Gear** tab shows the live URL prefix for your current origin (copy button).
+
 
 ## Features
 
-- Log sets: equipment, weight (lb/kg), reps, optional notes
-- Today: list / edit / delete today’s sets
-- Equipment library: add / rename / delete
-- History by day with volume totals
-- SwiftData on-device storage
-- Dark gym-friendly UI
-- Export / import JSON (Settings)
-- **Siri**: `LogWorkoutSetIntent` — phrase *or* equipment + weight + reps
-- In-app **Speech** mic on the Log tab: **SFSpeechRecognizer (Apple) primary**; optional Whisper server URL in Settings as backup (DualSpeechScorer)
+- **Log a set** — pick or type equipment, weight with **lb/kg** toggle, reps, optional notes
+- **Today’s session** — see everything logged today; edit or delete individual sets
+- **Equipment library** — remembered names with autocomplete/quick pick; add, rename, remove
+- **History** — browse past days; open a day for all equipment + sets; per-day totals
+- **Persistence** — `localStorage`; **Export / Import JSON** from the Gear tab
+- **PWA** — web app manifest, icons, Apple meta tags, service worker (Workbox via `vite-plugin-pwa`)
+- **Nice extras** — quick-repeat last set, progress glance, dark gym UI, large tap targets, safe-area insets for notch / home indicator
 
-## Siri / “Add to Siri”
+## PWA verification
 
-### What the intent does
-`LogWorkoutSetIntent` accepts:
+After `npm run build` and `npm run preview` (or `preview:pwa`):
 
-- **Phrase** — e.g. `bench press 185 for 8`, `squat two twenty five for five`
-- **Or** structured **Equipment**, **Weight**, **Reps**, optional **Unit**
+| Check | Where |
+| --- | --- |
+| Manifest | [http://localhost:5173/manifest.webmanifest](http://localhost:5173/manifest.webmanifest) |
+| Service worker | DevTools → Application → Service Workers (`sw.js` / Workbox) |
+| Icons | `/icon-192.png`, `/icon-512.png`, `/apple-touch-icon.png` |
+| Registration | `src/main.tsx` calls `registerSW({ immediate: true })` |
 
-It parses the phrase (same style heuristics as the web app), creates/finds equipment in SwiftData, inserts a `WorkoutSet`, and Siri speaks a confirmation like “Logged Bench Press 185 lb × 8.”
+In Chrome DevTools you can also run Lighthouse → Progressive Web App.
 
-App Shortcuts phrases (donated via `WorkoutLogShortcuts`):
+## Usage tips
 
-- “Log a set in Workout Log”
-- “Log workout set in Workout Log”
-- “Log ⟨phrase⟩ in Workout Log”
+1. Open **Log**, enter an equipment name (or tap a suggestion), weight, and reps.
+2. Switch to **Today** to review, edit, or delete sets.
+3. Manage saved names under **Gear**; use **Export JSON** for backups.
+4. Open **History** to revisit previous days.
 
-### Add a custom Siri phrase
+Data never leaves this device unless you export or import a file yourself. The storage key remains `workout-log:v1`.
 
-1. Install the app on a device signed with your team (Simulator has limited Siri).
-2. Open **Settings → Siri & Search → Workout Log**  
-   — or open the **Shortcuts** app → look for App Shortcut **Log Set**.
-3. Tap **Add to Siri** / record a phrase such as **“Log my set”**.
-4. Say: **“Hey Siri, log my set”** → when prompted, **“bench press 185 for 8”**.
+## Tech
 
-You can also run the intent from the Shortcuts app with a Dictate Text action filling the Phrase parameter.
+- Vite + React + TypeScript
+- `vite-plugin-pwa` (Workbox) for manifest + offline caching
+- Client-only persistence via `localStorage`
 
-## App Store / TestFlight
-
-- Running on your own iPhone with a free Apple ID is possible for short-lived development installs.
-- **TestFlight and App Store distribution require the paid [Apple Developer Program](https://developer.apple.com/programs/)** (Kenneth’s team account).
-- Enable the **Siri** capability on the App ID in the developer portal if Xcode doesn’t sync it automatically.
-
-## Privacy
-
-- Sets stay on-device (SwiftData).
-- Microphone / Speech are only used if you tap the in-app mic.
-- Siri audio is handled by the system; the app receives the resulting text/parameters.
-
-## Layout
+## Project layout
 
 ```
-WorkoutLogIOS/
-  README.md
-  project.yml                 # XcodeGen
-  WorkoutLog.xcodeproj/
-  WorkoutLog/
-    WorkoutLogApp.swift
-    Info.plist
-    WorkoutLog.entitlements
-    Assets.xcassets/
-    Models/Models.swift
-    Services/…                # parser, store helpers, preferred unit
-    Views/…                   # Today, Log, Gear, History, Settings
-    Intents/…                 # LogWorkoutSetIntent + shared container
+public/           icons (192/512/maskable/apple-touch), favicon
+scripts/          generate-icons.mjs
+src/
+  components/     UI screens (Today, Log, Gear, History)
+  hooks/          useWorkoutStore — state + persistence
+  storage.ts      load/save/export/import
+  types.ts        shared types
+  App.tsx         shell + bottom navigation
+  main.tsx        React bootstrap + SW registration
 ```
 
 ## Limitations
 
-- Cannot compile with `xcodebuild` on Linux (no Xcode / iOS SDK here).
-- Siri App Shortcuts need a real device for the best experience.
-- First App Intent donation may require opening the app once after install.
-- In-app mic uses Apple’s Speech framework (on-device/network per system settings), not the web Whisper server.
-- No iCloud sync in v1 (local only).
+- Data is per-browser / per-device (clearing site data wipes the log unless you exported)
+- No cloud sync or multi-user accounts
+- History day detail is read-only (edit/delete from **Today** for the current day)
+- Import replaces the entire local dataset
+- iOS Add to Home Screen requires Safari + preferably HTTPS; offline covers the app shell (UI), not cross-device sync
